@@ -1,0 +1,36 @@
+<MarvinExternalFile>
+  <AliasList>
+    <Import>$(AppDir)/Aliases.xml</Import>
+    <DefaultAlias GridID="Main" />
+    <DefaultAlias Slide.Dir="Slides" />
+    <DefaultAlias demo.Panel.H="785" />
+    <DefaultAlias demo.Panel.W="1510" />
+    <DefaultAlias Slide.Default.Location="$(AppDir)/Images/LegalNoticesAndDisclaimers.png" />
+    <DefaultAlias Default.Image="$(AppDir)/Images/default.png"/>
+    <DefaultAlias Slide.1.Location="$(Default.Image)" />
+    <DefaultAlias Slide.2.Location="$(Default.Image)" />
+    <DefaultAlias Slide.3.Location="$(Default.Image)" />
+    <DefaultAlias Slide.4.Location="$(Default.Image)" />
+    <DefaultAlias Slide.5.Location="$(Default.Image)" />
+    <DefaultAlias Slide.6.Location="$(Default.Image)" />
+    <DefaultAlias Slide.7.Location="$(Default.Image)" />
+    <DefaultAlias Slide.8.Location="$(Default.Image)" />
+    <DefaultAlias Initial.ID="Default" />
+    <Alias Slide.Default.Location="$(Slide.Default.Location)" />
+  </AliasList>
+  <Grid>
+    <Widget File="Image/DynamicImage.xml" row="0" column="0" Width="$(demo.Panel.W)" Height="$(demo.Panel.H)" Align="Center">
+      <MinionSrc ID="Vertical" Namespace="Vertical.Control.$(GridID)" />
+      <Initial ID="$(Initial.ID)" />
+      <Image Source="$(Slide.Default.Location)" ID="Default" />
+      <Image Source="$(Slide.1.Location)" ID="1" />
+      <Image Source="$(Slide.2.Location)" ID="2" />
+      <Image Source="$(Slide.3.Location)" ID="3" />
+      <Image Source="$(Slide.4.Location)" ID="4" />
+      <Image Source="$(Slide.5.Location)" ID="5" />
+      <Image Source="$(Slide.6.Location)" ID="6" />
+      <Image Source="$(Slide.7.Location)" ID="7" />
+      <Image Source="$(Slide.8.Location)" ID="8" />
+    </Widget>
+  </Grid>
+</MarvinExternalFile>

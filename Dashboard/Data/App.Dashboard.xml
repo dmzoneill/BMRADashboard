@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Marvin>
+  <Application Scale="Auto" mode="debugd">
+    <CreationSize Width="1920" Height="1080"/>
+    <Network IP="localhost" Port="50200">
+    </Network>
+    <Title>Container Bare Metal Experience Kits Dashboard</Title>
+    <Padding top="0" bottom="0" right="0" left="0" />
+    <StyleSheet>Widget/Modena-BIFF.css</StyleSheet>
+    <Heartbeat Rate="10" />
+    <Tasks Enabled="True" />
+    <MainMenu Show="True">
+      <Menu Title="Tasks">
+        <MenuItem Text="Reset Demo Data" Task="task.tab.Dashboard" />
+      </Menu>
+    </MainMenu>
+    <Tabs Side="Bottom">
+      <Tab ID="Tab.Dashboard" />
+    </Tabs>
+  </Application>
+  <Tab ID="Tab.Dashboard" hgap="0" vgap="0" File="$(AppDir)/Tab.Dashboard.xml" />
+  <AliasList>
+    <Alias AppDir="Data" />
+  </AliasList>
+  <Tasklist ID="task.tab.Dashboard">
+    <TaskItem Type="MarvinAdmin">
+      <Task ID="SetActiveTab" Data="Tab.Dashboard" />
+    </TaskItem>
+    <TaskItem Type="Marvin" Postpone="500">
+      <DataToInsert ID="Slide" Namespace="Slide.Control.Main" Data="Slide.Grid.Main" />
+    </TaskItem>
+  </Tasklist>
+</Marvin>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MarvinExternalFile>
+  <AliasList>
+    <Import>$(AppDir)/Aliases.xml</Import>
+    <Import>$(AppDir)/Demos/expkit3/Definitions/expkit3.xml</Import>
+    <DefaultAlias multus.state="enabled" />
+  </AliasList>
+  <Grid column="0" row="0" hgap="20" vgap="20">
+    <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Width="1510">
+      <!-- Mini setup image -->
+      <Grid row="$(CurrentRowAlias)" column="$(CurrentColumnAlias)" Width="$(demo.server.grid.width)" Align="Center">
+        <Widget File="Image/ImageScale.xml" row="0" column="0" Width="$(demo.server.width)">
+          <Source>$(AppDir)/Demos/expkit3/Images/mini_setup.png</Source>
+        </Widget>
+      </Grid>
+      <!-- Kubernetes pod -->
+      <Grid row="$(CurrentRowAlias)" column="$(NextColumnAlias)" Width="$(demo.pod.grid.width)" vgap="10" Align="N">
+        <StyleOverride>
+          <Item>
+            -fx-background-color: $(demo.pod.grid.background);
+            -fx-border-radius: 10 10 0 0;
+            -fx-background-radius: 10 10 0 0;
+          </Item>
+        </StyleOverride>
+        <!-- Kubernetes pod header -->
+        <Grid row="$(CurrentRowAlias)" column="$(CurrentColumnAlias)" Width="$(demo.pod.grid.width)" Align="N">
+          <StyleOverride>
+            <Item>
+              -fx-background-color: $(blue);
+              -fx-border-radius: 10 10 0 0;
+              -fx-background-radius: 10 10 0 0;
+            </Item>
+          </StyleOverride>
+          <Widget File="Text/Text.xml" row="$(CurrentRowAlias)" column="$(CurrentColumnAlias)">
+            <InitialValue>Multi-network Kubernetes pods with Multus CNI</InitialValue>
+            <StyleOverride>
+              <Item>
+                -fx-background-color: $(blue);
+                -fx-border-radius: 10 10 0 0;
+                -fx-background-radius: 10 10 0 0;
+              </Item>
+            </StyleOverride>
+          </Widget>
+        </Grid>
+        <!-- System stats -->
+        <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Width="$(demo.pod.grid.width)">
+          <Grid Width="$(demo.pod.grid.width)" row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Align="Center" hgap="0">
+            <!-- CNI/network topology diagram -->
+            <Grid Width="$(demo.pod.grid.width)" row="$(NextRowAlias)" column="$(CurrentColumnAlias)">
+              <Widget File="Image/ImageScale.xml" row="$(NextRowAlias)" column="$(NextColumnAlias)" Width="$(demo.pod.topology.width)">
+                <Source>$(AppDir)/Demos/expkit3/Images/topology_1.png</Source>
+              </Widget>
+            </Grid>
+            <!-- Guages -->
+            <Grid Width="$(demo.pod.grid.width)" row="$(NextRowAlias)" column="$(CurrentColumnAlias)">
+              <!-- DPDK container -->
+              <Grid File="$(AppDir)/Page.Demo.Expkit3.Systemstats-before.xml" NS_ID="2" row="1" column="1" Width="$(demo.statspanel.width)" />
+              <!-- Kernel container -->
+              <Grid File="$(AppDir)/Page.Demo.Expkit3.Systemstats-after.xml" NS_ID="1" row="1" column="2" Width="$(demo.statspanel.width)" />
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+    </Grid>
+    <!-- tagline -->
+    <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Width="1510" Height="120">
+      <StyleOverride>
+        <Item>
+          -fx-background-color: $(demo.panel.title.background);
+          -fx-border-radius: 10 10 10 10;
+          -fx-background-radius: 10 10 10 10;
+          -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0);
+        </Item>
+      </StyleOverride>
+      <Widget File="Image/ImageScale.xml" row="$(NextRowAlias)" column="$(NextColumnAlias)" Width="$(demo.pod.topology.width)">
+        <Source>$(AppDir)/Demos/expkit3/Images/benefits.png</Source>
+      </Widget>
+    </Grid>
+  </Grid>
+</MarvinExternalFile>

@@ -1,0 +1,47 @@
+<MarvinExternalFile>
+  <AliasList>
+    <Alias GridID="Message" />
+    <Alias CustomDir="$(AppDir)/Demos/expkit2" />
+    <!-- Layout and colors -->
+    <Alias demo.panel.height="700" demo.panel.width="490" demo.panel.background="$(blue-40)" demo.panel.title.height="38" demo.panel.title.background="$(blue-gradient)" />
+    <Alias demo.panel.left.width="430" />
+    <Alias demo.panel.right.width="610" />
+    <Alias demo.panel.center.width="430" />
+    <Alias demo.takeaways.grid.height="662" demo.takeaways.height="640" />
+    <Alias demo.chart.height="150" demo.chart.width="420" />
+    <Alias demo.gauge.height="185" demo.gauge.width="185" />
+    <Alias demo.cpus.width="400" />
+    <Alias demo.grid.font="&quot;Intel Clear Pro&quot;" />
+    <!-- Captions -->
+    <Alias demo.before.title="Workload without CPU pinning and CPU isolation" demo.after.title="Workload with CPU pinning and CPU isolation" demo.message.title="Key Takeaways" />
+    <!-- Test and Messaging Section -->
+    <Alias MinionID="Expkit2.demo" />
+    <Alias Expkit2.demo.Tagline.Start=" packets - at least " />
+    <Alias Expkit2.demo.Tagline.End=" times better with Enhanced Platform Awareness" />
+    <Alias Expkit2.demo.Tagline.Size.1="64B" />
+    <Alias Expkit2.demo.Tagline.Size.2="128B" />
+    <Alias Expkit2.demo.Tagline.Size.3="256B" />
+    <Alias Expkit2.demo.Tagline.Size.4="512B" />
+    <Alias Expkit2.demo.Tagline.Size.5="1024B" />
+    <Alias Expkit2.demo.Tagline.Size.6="1518B" />
+    <Alias Expkit2.demo.Tagline.Gain.1="3.9" />
+    <Alias Expkit2.demo.Tagline.Gain.2="7.6" />
+    <Alias Expkit2.demo.Tagline.Gain.3="4.5" />
+    <Alias Expkit2.demo.Tagline.Gain.4="2.5" />
+    <Alias Expkit2.demo.Tagline.Gain.5="1.6" />
+    <Alias Expkit2.demo.Tagline.Gain.6="1.2" />
+    <Alias Expkit2.demo.Tagline.Title.1="Enhanced Platform Awareness - 64 bytes" />
+    <Alias Expkit2.demo.Tagline.Title.2="Enhanced Platform Awareness - 128 bytes" />
+    <Alias Expkit2.demo.Tagline.Title.3="Enhanced Platform Awareness - 256 bytes" />
+    <Alias Expkit2.demo.Tagline.Title.4="Enhanced Platform Awareness - 512 bytes" />
+    <Alias Expkit2.demo.Tagline.Title.5="Enhanced Platform Awareness - 1024 bytes" />
+    <Alias Expkit2.demo.Tagline.Title.6="Enhanced Platform Awareness - 1518 bytes" />
+    <!-- SUT 1 Specific -->
+    <Alias SUT.NS.1="expkit2.withoutCMK" />
+    <!-- SUT 2 Specific -->
+    <Alias SUT.NS.2="expkit2.withCMK" />
+    <!-- Minion Sources and Titles -->
+    <Alias minion.source.1="PacketRate" />
+    <Alias minion.source.2="Throughput" />
+  </AliasList>
+</MarvinExternalFile>

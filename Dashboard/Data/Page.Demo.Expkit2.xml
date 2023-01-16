@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MarvinExternalFile>
+  <AliasList>
+    <Import>$(AppDir)/Aliases.xml</Import>
+    <Import>$(AppDir)/Demos/expkit2/Definitions/expkit2.xml</Import>
+  </AliasList>
+  <Grid column="0" row="0" hgap="20" vgap="20">
+    <!-- Before -->
+    <Grid row="1" column="0" Width="$(demo.panel.left.width)" Height="$(demo.panel.height)">
+      <StyleOverride><Item>-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0);</Item></StyleOverride>
+      <!-- Header -->
+      <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)">
+        <StyleOverride>
+          <Item>
+            -fx-background-color: $(darkorange-gradient);
+            -fx-border-radius: 10 10 0 0;
+            -fx-background-radius: 10 10 0 0;
+          </Item>
+        </StyleOverride>
+        <Widget File="Text/Text.xml" row="0" column="0" Width="$(demo.panel.left.width)" Height="$(demo.panel.title.height)">
+          <InitialValue>$(demo.before.title)</InitialValue>
+          <StyleOverride>
+            <Item>-fx-font-family: $(demo.grid.font);</Item>
+          </StyleOverride>
+        </Widget>
+      </Grid>
+      <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" vgap="30" Align="Center">
+        <StyleOverride>
+          <Item>
+            -fx-background-color: $(demo.panel.background);
+          </Item>
+        </StyleOverride>
+        <!-- Gauges -->
+        <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" hgap="20">
+          <Widget File="Gauge/GaugeBar.xml" row="$(CurrentRowAlias)" column="$(CurrentColumnAlias)" Width="$(demo.gauge.width)" Height="$(demo.gauge.height)" Align="Center">
+            <StyleOverride File="GaugeBar-Before.css"/>
+            <Title>Throughput</Title>
+            <UnitsOverride>Gbps</UnitsOverride>
+            <MinionSrc ID="$(minion.source.2)" Namespace="$(SUT.NS.1)" />
+            <ValueRange Min="0" Max="50" />
+          </Widget>
+          <Widget File="Gauge/GaugeBar.xml" row="$(CurrentRowAlias)" column="$(NextColumnAlias)" Width="$(demo.gauge.width)" Height="$(demo.gauge.height)" Align="Center">
+            <StyleOverride File="GaugeBar-Before.css"/>
+            <Title>Packet Rate</Title>
+            <UnitsOverride>Mpps</UnitsOverride>
+            <MinionSrc ID="$(minion.source.1)" Namespace="$(SUT.NS.1)" />
+            <ValueRange Min="0" Max="50" />
+          </Widget>
+        </Grid>
+        <!-- Core pinning image -->
+        <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)">
+          <Widget File="Image/ImageScale.xml" row="0" column="0" Width="$(demo.cpus.width)">
+            <Source>$(AppDir)/Demos/expkit2/Images/disabled_1.png</Source>
+          </Widget>
+        </Grid>
+      </Grid>
+    </Grid>
+    <!-- Key takeaway -->
+    <Grid row="$(CurrentRowAlias)" column="$(NextColumnAlias)" Width="$(demo.panel.center.width)" Height="$(demo.panel.height)">
+      <StyleOverride><Item>-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0);</Item></StyleOverride>
+      <!-- Header -->
+      <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)">
+        <StyleOverride>
+          <Item>
+            -fx-background-color: $(demo.panel.title.background);
+            -fx-border-radius: 10 10 0 0;
+            -fx-background-radius: 10 10 0 0;
+          </Item>
+        </StyleOverride>
+        <Widget File="Text/Text.xml" row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Width="$(demo.panel.center.width)" Height="$(demo.panel.title.height)">
+          <InitialValue>$(demo.message.title)</InitialValue>
+          <StyleOverride>
+            <Item>-fx-font-family: $(demo.grid.font);</Item>
+          </StyleOverride>
+        </Widget>
+      </Grid>
+      <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Align="Center" Width="$(demo.panel.center.width)" Height="$(demo.takeaways.grid.height)">
+        <StyleOverride>
+          <Item>
+            -fx-background-color: $(demo.panel.background);
+          </Item>
+        </StyleOverride>
+        <!-- Takeaways -->
+        <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)">
+          <Widget File="Image/ImageScale.xml" row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Width="$(demo.panel.center.width)">
+            <Source>$(AppDir)/Demos/expkit2/Images/takeaways_1.png</Source>
+          </Widget>
+        </Grid>
+      </Grid>
+    </Grid>
+    <!-- After -->
+    <Grid row="$(CurrentRowAlias)" column="$(NextColumnAlias)" Width="$(demo.panel.right.width)" Height="$(demo.panel.height)">
+      <StyleOverride><Item>-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0);</Item></StyleOverride>
+      <!-- Header -->
+      <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)">
+        <StyleOverride>
+          <Item>
+            -fx-background-color: $(darkgreen-gradient);
+            -fx-border-radius: 10 10 0 0;
+            -fx-background-radius: 10 10 0 0;
+          </Item>
+        </StyleOverride>
+        <Widget File="Text/Text.xml" row="0" column="0" Width="$(demo.panel.left.width)" Height="$(demo.panel.title.height)">
+          <InitialValue>$(demo.after.title)</InitialValue>
+          <StyleOverride>
+            <Item>
+              -fx-font-family: $(demo.grid.font);
+            </Item>
+          </StyleOverride>
+        </Widget>
+      </Grid>
+      <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" vgap="30" Align="Center">
+        <StyleOverride>
+          <Item>
+            -fx-background-color: $(demo.panel.background);
+          </Item>
+        </StyleOverride>
+        <!-- Gauges -->
+        <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" hgap="20">
+          <Widget File="Gauge/GaugeBar.xml" row="$(CurrentRowAlias)" column="$(CurrentColumnAlias)" Width="$(demo.gauge.width)" Height="$(demo.gauge.height)" Align="Center">
+            <StyleOverride File="GaugeBar-After.css"/>
+            <Title>Throughput</Title>
+            <UnitsOverride>Gbps</UnitsOverride>
+            <MinionSrc ID="$(minion.source.2)" Namespace="$(SUT.NS.2)" />
+            <ValueRange Min="0" Max="50" />
+          </Widget>
+          <Widget File="Gauge/GaugeBar.xml" row="$(CurrentRowAlias)" column="$(NextColumnAlias)" Width="$(demo.gauge.width)" Height="$(demo.gauge.height)" Align="Center">
+            <StyleOverride File="GaugeBar-after.css"/>
+            <Title>Packet Rate</Title>
+            <UnitsOverride>Mpps</UnitsOverride>
+            <MinionSrc ID="$(minion.source.1)" Namespace="$(SUT.NS.2)" />
+            <ValueRange Min="0" Max="50" />
+          </Widget>
+        </Grid>
+        <!-- Core pinning image -->
+        <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)">
+          <Widget File="Image/ImageScale.xml" row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Width="$(demo.panel.right.width)">
+            <Source>$(AppDir)/Demos/expkit2/Images/enabled_1.png</Source>
+          </Widget>
+        </Grid>
+      </Grid>
+    </Grid>
+    <Grid row="2" column="0" Width="1510" colspan="3" Height="60">
+      <StyleOverride>
+        <Item>
+          -fx-background-color: $(demo.panel.title.background);
+          -fx-border-radius: 10 10 10 10;
+          -fx-background-radius: 10 10 10 10;
+          -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0);
+        </Item>
+      </StyleOverride>
+      <Peekaboo ID="Tagline" Namespace="Expkit2" Default="Hide" />
+      <For Count="6" StartValue="1" CurrentValueAlias="i">
+        <Widget File="Text/Text.xml" row="0" column="0" Height="60">
+          <InitialValue>$(Expkit2.demo.Tagline.Size.$(i))</InitialValue>
+          <StyleOverride>
+            <Item>-fx-font-size: 3em;-fx-text-fill: $(yellow); -fx-font-weight: bold;</Item>
+          </StyleOverride>
+          <Peekaboo ID="Tagline.$(i)" Namespace="Expkit2" Default="Hide" />
+        </Widget>
+        <Widget File="Text/Text.xml" row="0" column="1" Height="60">
+          <InitialValue>$(Expkit2.demo.Tagline.Start)</InitialValue>
+          <StyleOverride>
+            <Item>-fx-font-size: 3em; -fx-text-fill: $(white);</Item>
+          </StyleOverride>
+          <Peekaboo ID="Tagline.$(i)" Namespace="Expkit2" Default="Hide" />
+        </Widget>
+        <Widget File="Text/Text.xml" row="0" column="2" Height="60">
+          <InitialValue>$(Expkit2.demo.Tagline.Gain.$(i))</InitialValue>
+          <StyleOverride>
+            <Item>-fx-font-size: 3em; -fx-text-fill: $(yellow); -fx-font-weight: bold;</Item>
+          </StyleOverride>
+          <Peekaboo ID="Tagline.$(i)" Namespace="Expkit2" Default="Hide" />
+        </Widget>
+        <Widget File="Text/Text.xml" row="0" column="3" Height="60">
+          <InitialValue>$(Expkit2.demo.Tagline.End)</InitialValue>
+          <StyleOverride>
+            <Item>-fx-font-size: 3em; -fx-text-fill: $(white);</Item>
+          </StyleOverride>
+          <Peekaboo ID="Tagline.$(i)" Namespace="Expkit2" Default="Hide" />
+        </Widget>
+      </For>
+    </Grid>
+  </Grid>
+</MarvinExternalFile>

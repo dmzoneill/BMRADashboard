@@ -1,0 +1,7 @@
+
+#test {
+	-fx-font-family: "Arial Regular";
+	-fx-font-size: 2.5em; /* 14px */
+	-fx-text-fill: white;
+	-fx-wrap-text: true; /* true | false */
+}

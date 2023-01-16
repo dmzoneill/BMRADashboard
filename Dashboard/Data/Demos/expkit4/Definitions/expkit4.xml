@@ -1,0 +1,102 @@
+<!--
+##############################################################################
+#  Copyright (c) 2016 by Patrick Kutch https://github.com/PatrickKutch
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+##############################################################################
+#    File Abstract:
+#
+#
+##############################################################################
+-->
+<MarvinExternalFile>
+  <AliasList>
+    <Alias GridID="Message" />
+    <Alias CustomDir="$(AppDir)/Demos/expkit4" />
+    <!-- Layout and colors -->
+    <Alias demo.panel.height="700" demo.panel.width="490" demo.panel.background="$(blue-40)" demo.panel.title.height="38" demo.panel.title.background="$(blue)" />
+    <Alias demo.panel.left.width="490" />
+    <Alias demo.panel.right.width="490" />
+    <Alias demo.panel.center.width="490" />
+    <Alias demo.takeaways.height="657" demo.takeaways.width="460" />
+    <Alias demo.chart.height="240" demo.chart.width="420" />
+    <Alias demo.gauge.height="170" demo.gauge.width="170" />
+    <Alias demo.hw.width="440" />
+    <Alias demo.hw.height="176" />
+    <Alias demo.grid.font="&quot;Intel Clear Pro&quot;" />
+    <!-- Captions -->
+    <Alias demo.before.title="Single Core Performance (Accelerate)" demo.after.title="Multicore Performance (Scale)" demo.message.title="Key Takeaways" />
+    <!-- Test and Messaging Section -->
+    <Alias MinionID="Expkit4.demo" />
+    <Alias Expkit4.demo.Tagline.Start=" the solution scales to meet the demands of up to " />
+    <Alias Expkit4.demo.Tagline.End="" />
+    <Alias Expkit4.demo.Tagline.Size.1="2 cores" />
+    <Alias Expkit4.demo.Tagline.Size.2="4 cores" />
+    <Alias Expkit4.demo.Tagline.Size.3="8 cores" />
+    <Alias Expkit4.demo.Tagline.Size.4="12 cores" />
+    <Alias Expkit4.demo.Tagline.Size.5="" />
+    <Alias Expkit4.demo.Tagline.Size.6="" />
+    <Alias Expkit4.demo.Tagline.Gain.1="600 subscribers" />
+    <Alias Expkit4.demo.Tagline.Gain.2="1200 subscribers" />
+    <Alias Expkit4.demo.Tagline.Gain.3="2400 subscribers" />
+    <Alias Expkit4.demo.Tagline.Gain.4="3600 subscribers" />
+    <Alias Expkit4.demo.Tagline.Gain.5="" />
+    <Alias Expkit4.demo.Tagline.Gain.6="" />
+    <Alias Expkit4.demo.Tagline.Title.1="Enhanced Platform Awareness - 64 bytes" />
+    <Alias Expkit4.demo.Tagline.Title.2="Enhanced Platform Awareness - 128 bytes" />
+    <Alias Expkit4.demo.Tagline.Title.3="Enhanced Platform Awareness - 256 bytes" />
+    <Alias Expkit4.demo.Tagline.Title.4="Enhanced Platform Awareness - 512 bytes" />
+    <Alias Expkit4.demo.Tagline.Title.5="" />
+    <Alias Expkit4.demo.Tagline.Title.6="" />
+    <!-- SUT 1 Specific -->
+    <Alias SUT.NS.1="expkit4.accelerate" />
+    <Alias minion.source.1.1="Crc.Rx" />
+    <Alias minion.source.1.2="Crc.Tx" />
+    <Alias minion.source.2.1="Turbo.Rx" />
+    <Alias minion.source.2.2="Turbo.Tx" />
+    <Alias minion.source.3.1="Aesni.Rx" />
+    <Alias minion.source.3.2="Aesni.Tx" />
+    <Alias minion.source.4.1="Qat.Rx" />
+    <Alias minion.source.4.2="Qat.Tx" />
+    <!-- SUT 2 Specific -->
+    <Alias SUT.NS.2="expkit4.scale" />
+    <!-- Minion Sources -->
+    <Alias minion.source.5.1="Rx" />
+    <Alias minion.source.5.2="Tx" />
+    <Alias minion.source.6.1="1.Rx" />
+    <Alias minion.source.6.2="1.Tx" />
+    <Alias minion.source.7.1="2.Rx" />
+    <Alias minion.source.7.2="2.Tx" />
+    <Alias minion.source.8.1="3.Rx" />
+    <Alias minion.source.8.2="3.Tx" />
+    <Alias minion.source.9.1="4.Rx" />
+    <Alias minion.source.9.2="4.Tx" />
+    <Alias minion.source.10.1="5.Rx" />
+    <Alias minion.source.10.2="5.Tx" />
+    <Alias minion.source.11.1="6.Rx" />
+    <Alias minion.source.11.2="6.Tx" />
+    <Alias minion.source.12.1="7.Rx" />
+    <Alias minion.source.12.2="7.Tx" />
+    <Alias minion.source.13.1="8.Rx" />
+    <Alias minion.source.13.2="8.Tx" />
+    <Alias minion.source.14.1="9.Rx" />
+    <Alias minion.source.14.2="9.Tx" />
+    <Alias minion.source.15.1="10.Rx" />
+    <Alias minion.source.15.2="10.Tx" />
+    <Alias minion.source.16.1="11.Rx" />
+    <Alias minion.source.16.2="11.Tx" />
+    <Alias minion.source.17.1="12.Rx" />
+    <Alias minion.source.17.2="12.Tx" />
+
+  </AliasList>
+</MarvinExternalFile>

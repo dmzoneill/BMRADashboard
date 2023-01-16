@@ -1,0 +1,24 @@
+/* 
+Notes: These are Blue and gradient-blue background settings
+*/
+
+.root { -fx-background: blue; }
+
+/* *{
+    -tab-background-color:blue;
+} */
+
+.root {
+	-fx-font-family: "Charter";
+	-fx-font-size: 15;
+}
+
+.solartab .tab:selected { -fx-background-color: #FFB84D; }
+
+.tab:selected .tab-label { -fx-font-weight: bold; }
+
+.tab-pane .tab-header-area .tab-header-background { -fx-background-color: #BDBDBD; }
+
+#gradient-blue { -tab-background-color: linear-gradient(from 0% 0% to 100% 200%, repeat, rgb(0, 113, 197) 0%, rgb(7, 14, 20) 50%); }
+
+#blue { -tab-background-color: rgb(0, 113, 197); }

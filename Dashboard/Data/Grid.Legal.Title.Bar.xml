@@ -1,0 +1,87 @@
+<MarvinExternalFile>
+  <AliasList>
+    <Import>$(AppDir)/Aliases.xml</Import>
+  </AliasList>
+  <Grid Align="NW" hgap="0" vgap="0" Width="1510">
+    <StyleOverride>
+      <Item>
+        -fx-wrap-text:true;
+        -fx-background-color: linear-gradient(from 0% 20% to 0% 100%, $(blue), derive($(blue), -20%));
+        -fx-border-radius: 10 10 10 10;
+        -fx-background-radius: 10 10 10 10;
+      </Item>
+    </StyleOverride>
+    <Peekaboo ID="TitleVisibility" Namespace="Page" Default="Hide" />
+    <Widget File="Text/Text.xml" row="0" column="0" Align="E" Height="36" >
+      <InitialValue>Legal area</InitialValue>
+      <StyleOverride>
+        <Item>
+          -fx-font-family:$(Menu.Title.Text.Font);
+          -fx-font-size: 	16pt;
+          -fx-text-fill: 	$(white);
+          -fx-wrap-text:true;
+          -fx-background-color: linear-gradient(from 0% 20% to 0% 100%, $(blue), derive($(blue), -20%));
+          -fx-border-radius: 10 10 10 10;
+          -fx-background-radius: 10 10 10 10;
+          -fx-padding: 0 15 0 15;
+        </Item>
+      </StyleOverride>
+    </Widget>
+    <Widget File="Text/Text.xml" row="0" column="1" Align="Center" Height="28" >
+      <InitialValue>»</InitialValue>
+      <StyleOverride>
+        <Item>
+          -fx-font-family: $(Menu.Title.Text.Font);
+          -fx-font-size: 16pt;
+          -fx-text-fill: $(white);
+          -fx-wrap-text: true;
+          -fx-background-color: transparent;
+        </Item>
+      </StyleOverride>
+    </Widget>
+    <Widget File="Text/Text.xml" row="0" column="2" Align="E" Height="28" >
+      <MinionSrc ID="Title" Namespace="Info" />
+      <StyleOverride>
+        <Item>
+          -fx-font-family:$(Menu.Title.Text.Font);
+          -fx-font-size: 	16pt;
+          -fx-text-fill: 	$(white);
+          -fx-wrap-text:true;
+          -fx-background-color: linear-gradient(from 0% 20% to 0% 100%, $(blue), derive($(blue), -20%));
+          -fx-border-radius: 10 10 10 10;
+          -fx-background-radius: 10 10 10 10;
+          -fx-padding: 0 15 0 15;
+        </Item>
+      </StyleOverride>
+    </Widget>
+    <Widget File="Text/Text.xml" row="0" column="3" Align="Center" Height="28" >
+      <InitialValue>»</InitialValue>
+      <Peekaboo ID="SubpageTitleVisibility" Namespace="Info" Default="Show" />
+      <StyleOverride>
+        <Item>
+          -fx-font-family: $(Menu.Title.Text.Font);
+          -fx-font-size: 16pt;
+          -fx-text-fill: $(white);
+          -fx-wrap-text: true;
+          -fx-background-color: transparent;
+        </Item>
+      </StyleOverride>
+    </Widget>
+    <Widget File="Text/Text.xml" row="0" column="4" Align="E" Height="28" >
+      <MinionSrc ID="SubpageTitle" Namespace="Page" />
+      <Peekaboo ID="SubpageTitleVisibility" Namespace="Info" Default="Show" />
+      <StyleOverride>
+        <Item>
+          -fx-font-family:$(Menu.Title.Text.Font);
+          -fx-font-size: 	16pt;
+          -fx-text-fill: 	$(white);
+          -fx-wrap-text:true;
+          -fx-background-color: linear-gradient(from 0% 20% to 0% 100%, $(blue), derive($(blue), -20%));
+          -fx-border-radius: 10 10 10 10;
+          -fx-background-radius: 10 10 10 10;
+          -fx-padding: 0 15 0 15;
+        </Item>
+      </StyleOverride>
+    </Widget>
+  </Grid>
+</MarvinExternalFile>

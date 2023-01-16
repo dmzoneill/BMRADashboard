@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MarvinExternalFile>
+  <AliasList>
+    <Import>$(AppDir)/Aliases.xml</Import>
+    <Import>$(AppDir)/Demos/expkit5a/Definitions/expkit5.xml</Import>
+  </AliasList>
+  <Grid>
+    <Grid row="$(CurrentRowAlias)" column="$(CurrentRowAlias)">
+      <!-- 1 row 1 column -->
+      <Grid row="$(CurrentRowAlias)" column="$(NextColumnAlias)" Width="$(demo.grid.width)" Height="$(demo.grid.height)">
+        <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Align="Center" vgap="10">
+          <!-- video -->
+          <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)">
+            <Widget File="Media/VideoPlayer.xml" row="0" column="0" Height="720">
+              <Video Source="$(AppDir)/Demos/expkit4/video.mp4" ID="Video_1" />
+              <AutoStart>False</AutoStart>
+              <Repeat Mode="Single">False</Repeat>
+              <PlaybackControl ID="PlaybackControl" Namespace="Expkit4.Video" />
+            </Widget>
+          </Grid>
+          <!-- controls -->
+          <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" hgap="20">
+            <Widget File="Button/Button.xml" row="1" column="0" Task="VideoPlayer4PlayBack" Width="150" Height="24">
+              <Title>Play</Title>
+            </Widget>
+            <Widget File="Button/Button.xml" row="1" column="1" Task="VideoPlayer4PausePlayBack" Width="150" Height="24">
+              <Title>Pause</Title>
+            </Widget>
+            <Widget File="Button/Button.xml" row="1" column="2" Task="VideoPlayer4StopPlayBack" Width="150" Height="24">
+              <Title>Stop</Title>
+            </Widget>
+            <Widget File="Button/Button.xml" row="1" column="3" Task="VideoPlayer4External" Width="150" Height="24">
+              <Title>External Player</Title>
+            </Widget>
+          </Grid>
+        </Grid>
+      </Grid>
+    </Grid>
+  </Grid>
+  <!-- expkit 5a video -->
+  <TaskList ID="VideoPlayer4PlayBack">
+    <TaskItem Type="Marvin">
+      <DataToInsert ID="PlaybackControl" Namespace="Expkit4.Video" Data="Play" />
+    </TaskItem>
+  </TaskList>
+  <TaskList ID="VideoPlayer4StopPlayBack">
+    <TaskItem Type="Marvin">
+      <DataToInsert ID="PlaybackControl" Namespace="Expkit4.Video" Data="Stop" />
+    </TaskItem>
+  </TaskList>
+  <TaskList ID="VideoPlayer4PausePlayBack">
+    <TaskItem Type="Marvin">
+      <DataToInsert ID="PlaybackControl" Namespace="Expkit4.Video" Data="Pause" />
+    </TaskItem>
+  </TaskList>
+  <TaskList ID="VideoPlayer4External">
+    <TaskItem Type="LaunchProgram">
+      <Application>cmd</Application>
+      <Param>/c start $(AppDir)/Demos/expkit4/video.mp4</Param>
+    </TaskItem>
+  </TaskList>
+</MarvinExternalFile>

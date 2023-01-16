@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MarvinExternalFile>
+  <AliasList>
+    <Import>Widget/ICLEAR/ICLEAR.xml</Import>
+    <DefaultAlias ICLEAR_WIDTH="$(DEFAULT_BUTTON_WIDTH)" />
+    <DefaultAlias ICLEAR_HEIGHT="$(DEFAULT_BUTTON_HEIGHT)" />
+    <DefaultAlias ICLEAR_TEXT="" />
+    <DefaultAlias ICLEAR_TEXT_LOC="Center" />
+    <DefaultAlias PBState="Show" />
+    <DefaultAlias FONT_SIZE_OVERRIDE="$(button-text-size)" />
+  </AliasList>
+  <Grid hgap="0" vgap="0" Align="Center">
+    <PaddingOverride top="$(TOP_PAD)" bottom="$(BOTTOM_PAD)" right="$(RIGHT_PAD)" left="$(LEFT_PAD)" />
+    <Widget File="ICLEAR/ICLEARWidget.xml" row="0" column="0" Width="$(ICLEAR_WIDTH)" Height="$(ICLEAR_HEIGHT)" Align="$(ICLEAR_TEXT_LOC)" Task="$(ICLEAR_TASK)">
+      <InitialValue>$(ICLEAR_TEXT)</InitialValue>
+      <MinionSrc Namespace="$(ICLEAR_NAMESPACE)" ID="$(ICLEAR_ID)" />
+      <Peekaboo Namespace="$(ICLEAR_PEEKABOO_NAMESPACE)" ID="$(ICLEAR_PEEKABOO_ID)" Default="$(PBState)" />
+      <Peekaboo Namespace="Button.Deselect" ID="Deselect"/>
+      <Shape>M 150 100 L 500 100 L 500 200 L 150 200 L 150 100 Z</Shape>
+      <StyleOverride ID="$(ICLEAR_HOVER)">
+        <Item>-svg-main-color:$(ICLEAR_COLOR)</Item>
+        <Item>
+          -fx-base: $(ICLEAR_COLOR);
+          -hover-color: $(blue);
+          -fx-font-size: $(FONT_SIZE_OVERRIDE);
+          -fx-text-fill: $(white);
+          -fx-font-family: $(button-font);
+        </Item>
+      </StyleOverride>
+      <SelectedStyle>
+        <Item>-svg-main-color: $(blue);</Item>
+        <Item>
+          -fx-base: $(blue);
+          -fx-font-size: $(FONT_SIZE_OVERRIDE);
+          -fx-text-fill: $(white);
+          -fx-font-family: $(button-font);
+        </Item>
+      </SelectedStyle>
+    </Widget>
+  </Grid>
+</MarvinExternalFile>

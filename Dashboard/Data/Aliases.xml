@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MarvinExternalFile>
+  <AliasList>
+    <!-- Button colors-->
+    <Import>Widget/ICLEAR/ICLEAR.xml </Import>
+    <Import>Widget/ICLEAR/ICLEAR-Colors.xml </Import>
+    <!-- Theme colors -->
+    <DefaultAlias blue="rgb(0,113,197)" />
+    <DefaultAlias blue-gradient="linear-gradient(from 0% 20% to 0% 100%, $(blue), derive($(blue), -20%))" />
+    <DefaultAlias white="rgb(255,255,255)" />
+    <DefaultAlias dark-blue="rgb(0,60,113)" />
+    <DefaultAlias light-blue="rgb(0,174,239)" />
+    <DefaultAlias background-blue="rgb(33,76,118)" />
+    <DefaultAlias yellow="rgb(243,213,78)" />
+    <DefaultAlias green="rgb(63,1,87)" />
+    <DefaultAlias green-gradient="linear-gradient(from 0% 20% to 0% 100%, $(green), derive($(green), -20%))" />
+    <DefaultAlias darkgreen="rgb(100,160,0)" />
+    <DefaultAlias darkgreen-gradient="linear-gradient(from 0% 20% to 0% 100%, $(darkgreen), derive($(darkgreen), -20%))" />
+    <DefaultAlias orange="rgb(255,186,7)" />
+    <DefaultAlias darkorange="rgb(255, 150, 0)" />
+    <DefaultAlias darkorange-gradient="linear-gradient(from 0% 20% to 0% 100%, $(darkorange), derive($(darkorange), -20%))" />
+    <DefaultAlias red="rgb(237,28,36)" />
+    <DefaultAlias light-gray="rgb(177,186,191)" />
+    <DefaultAlias gray="rgb(147,149,152)" />
+    <DefaultAlias dark-gray="rgb(83,86,90)" />
+    <DefaultAlias black="rgb(0,0,0)" />
+    <DefaultAlias transparent="rgba(0,0,0,0)" />
+    <DefaultAlias dark-blue-80="rgba(0,60,113,0.8)" />
+    <DefaultAlias dark-blue-40="rgba(0,60,113,0.4)" />
+    <DefaultAlias blue-80="rgba(0,113,197,0.8)" />
+    <DefaultAlias blue-40="rgba(0,113,197,0.4)" />
+    <DefaultAlias dark-gray-80="rgba(83,86,90,0.8)" />
+    <DefaultAlias dark-gray-40="rgba(83,86,90,0.4)" />
+    <DefaultAlias gray-80="rgba(147,149,152,0.8)" />
+    <DefaultAlias button-text-size="20px" />
+    <DefaultAlias button-font="&quot;Intel Clear Pro&quot;" />
+    <!-- data Locations -->
+    <DefaultAlias Slide.Dir="$(AppDir)/Info" />
+    <DefaultAlias Window.Background="$(AppDir)/Images/background-transparent.jpg"/>
+    <!-- Theme sizes -->
+    <DefaultAlias Header.Background.Color="$(blue)" />
+    <DefaultAlias Header.Height="50" />
+    <DefaultAlias Cap.Width="40" />
+    <DefaultAlias Cap.Pad="5" />
+    <DefaultAlias Header.Left.Width="1510" />
+    <DefaultAlias Header.Title.Width="240" />
+    <DefaultAlias Header.Right.Width="50" />
+    <DefaultAlias Dashboard.Tab.H="980" />
+    <DefaultAlias Dashboard.Tab.W="1900" />
+    <DefaultAlias Dashboard.Main.Grid.H="900" />
+    <DefaultAlias Dashboard.Main.Grid.W="1900" />
+    <DefaultAlias Dashboard.Top.Header.H="50" />
+    <DefaultAlias Dashboard.Grid.H="935" />
+    <DefaultAlias Dashboard.Grid.W="1600" />
+    <DefaultAlias Dashboard.Grid.Header.H="0" />
+    <DefaultAlias Dashboard.Panel.H="785" />
+    <DefaultAlias Dashboard.Panel.W="1510" />
+    <DefaultAlias Dashboard.Title.W="1510" />
+    <DefaultAlias Dashboard.Corner.W="20" />
+    <DefaultAlias Dashboard.V.Grid.H="340" />
+    <DefaultAlias Dashboard.V.Grid.W="300" />
+    <DefaultAlias Dashboard.V.Panel.H="315" />
+    <DefaultAlias Dashboard.V.Panel.W="275" />
+    <DefaultAlias Dashboard.V.Panel.Center.W="235" />
+    <DefaultAlias Dashboard.Top.Cap.H="25" />
+    <DefaultAlias Message.ImageH="785" />
+    <DefaultAlias Message.ImageW="1510" />
+    <DefaultAlias Message.Background.ImageH="785" />
+    <DefaultAlias Message.Background.ImageW="1510" />
+    <DefaultAlias ICLEAR_WIDTH="150" />
+    <DefaultAlias ICLEAR_HEIGHT="25" />
+    <DefaultAlias ICLEAR_HOVER="True" />
+    <DefaultAlias Menu.Width="280"/>
+  </AliasList>
+</MarvinExternalFile>

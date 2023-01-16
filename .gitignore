@@ -1,0 +1,8 @@
+bin**
+obj**
+**/__pycache__/**
+**/OscarLog.txt
+Dashboard/*.html
+Dashboard/*.html.lck
+Installer/Output/**
+Installer/SignClientLog.txt

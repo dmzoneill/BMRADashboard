@@ -1,0 +1,96 @@
+<MarvinExternalFile>
+  <AliasList>
+    <Alias Placeholder.Image="$(AppDir)/Images/placeholder.png"/>
+    <!-- Main Panel Definitions -->
+    <Alias Button.Text.Demo.Main.1="Enhanced Platform Awareness" Button.Title.Demo.Main.1="Manage Noisy Neighbors using Enhanced Platform Awareness" Button.State.Demo.Main.1="Show" Button.Data.Demo.1.1="Slide.Grid.A" />
+    <Alias Button.Text.Demo.Main.2="Kubernetes Multi-networking" Button.Title.Demo.Main.2="DPDK Vs Kernel data plane performance using multiple network interfaces" Button.State.Demo.Main.2="Show" Button.Data.Demo.1.2="Slide.Grid.B" />
+    <Alias Button.Text.Demo.Main.3="Cable Use Case" Button.Title.Demo.Main.3=" Cable Use Case - Accelerate &amp; Scale" Button.State.Demo.Main.3="Show" Button.Data.Demo.1.3="Slide.Grid.C" />
+    <Alias Button.Text.Demo.Main.4="Telemetry" Button.Title.Demo.Main.4="Telemetry"  Button.State.Demo.Main.4="Show" Button.Data.Demo.1.4="Slide.Grid.E" />
+    <Alias Button.Text.Demo.Main.5="" Button.Title.Demo.Main.5="" Button.State.Demo.Main.5="Hide" Button.Data.Demo.1.5="Slide.Grid.F" />
+    <Alias Button.Text.Demo.Main.6="" Button.Title.Demo.Main.6="" Button.State.Demo.Main.6="Hide" Button.Data.Demo.1.6="Slide.Grid.D" />
+    <Alias Button.Text.Demo.Main.7="" Button.Title.Demo.Main.7="" Button.State.Demo.Main.7="Hide" Button.Data.Demo.1.7="Slide.Grid.G" />
+    <Alias Button.Text.Demo.Main.8="" Button.Title.Demo.Main.8="" Button.State.Demo.Main.8="Hide" Button.Data.Demo.1.8="Slide.Grid.H" />
+    <Alias Slide.Main.Location="$(Slide.Dir)/NFVExperienceKit.png" />
+    <Alias Initial.ID.Main="Slide.Grid.Main" />
+    <!-- SubPanel A Definitions -->
+    <Alias Button.Text.Demo.1.1="64B packets" Button.State.Demo.1.1="Show" Button.1.Data.A="Slide.1" />
+    <Alias Button.Text.Demo.1.2="128B packets" Button.State.Demo.1.2="Show" Button.2.Data.A="Slide.2" />
+    <Alias Button.Text.Demo.1.3="256B packets" Button.State.Demo.1.3="Show" Button.3.Data.A="Slide.3" />
+    <Alias Button.Text.Demo.1.4="512B packets" Button.State.Demo.1.4="Show" Button.4.Data.A="Slide.4" />
+    <Alias Button.Text.Demo.1.5="1024B packets" Button.State.Demo.1.5="Show" Button.5.Data.A="Slide.5" />
+    <Alias Button.Text.Demo.1.6="1518B packets" Button.State.Demo.1.6="Show" Button.6.Data.A="Slide.6" />
+    <Alias Button.Text.Demo.1.7="Stop traffic" Button.State.Demo.1.7="Show" Button.7.Data.A="Slide.7" />
+    <Alias Button.Text.Demo.1.8="Enhanced Platform Awareness Demo" Button.State.Demo.1.8="Show" Button.8.Data.A="Slide.8" />
+    <Alias Initial.ID.A="Slide.1" />
+    <!-- SubPanel B Definitions -->
+    <Alias Button.Text.Demo.2.1="64B packets" Button.State.Demo.2.1="Show" Button.Data.Demo.2.1="Slide.1" />
+    <Alias Button.Text.Demo.2.2="128B packets" Button.State.Demo.2.2="Show" Button.Data.Demo.2.2="Slide.2" />
+    <Alias Button.Text.Demo.2.3="256B packets" Button.State.Demo.2.3="Show" Button.Data.Demo.2.3="Slide.3" />
+    <Alias Button.Text.Demo.2.4="512B packets" Button.State.Demo.2.4="Show" Button.Data.Demo.2.4="Slide.4" />
+    <Alias Button.Text.Demo.2.5="1024B packets" Button.State.Demo.2.5="Show" Button.Data.Demo.2.5="Slide.5" />
+    <Alias Button.Text.Demo.2.6="1518B packets" Button.State.Demo.2.6="Show" Button.Data.Demo.2.6="Slide.6" />
+    <Alias Button.Text.Demo.2.7="Stop traffic" Button.State.Demo.2.7="Show" Button.Data.Demo.2.7="Slide.7" />
+    <Alias Button.Text.Demo.2.8="Kubernetes Networking Demo" Button.State.Demo.2.8="Show" Button.Data.Demo.2.8="Slide.8" />
+    <Alias Initial.ID.B="Slide.1" />
+    <!-- SubPanel C Definitions -->
+    <Alias Button.Text.Demo.3.1="2 CPU cores" Button.State.Demo.3.1="Show" Button.Data.Demo.3.1="Slide.1" />
+    <Alias Button.Text.Demo.3.2="4 CPU cores" Button.State.Demo.3.2="Show" Button.Data.Demo.3.2="Slide.2" />
+    <Alias Button.Text.Demo.3.3="8 CPU cores" Button.State.Demo.3.3="Show" Button.Data.Demo.3.3="Slide.3" />
+    <Alias Button.Text.Demo.3.4="12 CPU cores" Button.State.Demo.3.4="Show" Button.Data.Demo.3.4="Slide.4" />
+    <Alias Button.Text.Demo.3.5="Stop Demo" Button.State.Demo.3.5="Show" Button.Data.Demo.3.5="Slide.5" />
+    <Alias Button.Text.Demo.3.6="" Button.State.Demo.3.6="Hide" Button.Data.Demo.3.6="Slide.6" />
+    <Alias Button.Text.Demo.3.7="VCMTS Overview Video" Button.State.Demo.3.7="Show" Button.Data.Demo.3.7="Slide.7" />
+    <Alias Button.Text.Demo.3.8="VCMTS Performance Video" Button.State.Demo.3.8="Show" Button.Data.Demo.3.8="Slide.8" />
+    <Alias Initial.ID.C="Slide.1" />
+    <!-- SubPanel D Definitions -->
+    <Alias Button.Text.Demo.4.1="Monitoring with Grafana" Button.State.Demo.4.1="Show" Button.Data.Demo.4.1="Slide.1" />
+    <Alias Button.Text.Demo.4.2="Corrective action with Nagios" Button.State.Demo.4.2="Show" Button.Data.Demo.4.2="Slide.2" />
+    <Alias Button.Text.Demo.4.3="Menu Item #3" Button.State.Demo.4.3="Hide" Button.Data.Demo.4.3="Slide.3" />
+    <Alias Button.Text.Demo.4.4="Menu Item #4" Button.State.Demo.4.4="Hide" Button.Data.Demo.4.4="Slide.4" />
+    <Alias Button.Text.Demo.4.5="Menu Item #5" Button.State.Demo.4.5="Hide" Button.Data.Demo.4.5="Slide.5" />
+    <Alias Button.Text.Demo.4.6="Menu Item #6" Button.State.Demo.4.6="Hide" Button.Data.Demo.4.6="Slide.6" />
+    <Alias Button.Text.Demo.4.7="Menu Item #7" Button.State.Demo.4.7="Hide" Button.Data.Demo.4.7="Slide.7" />
+    <Alias Button.Text.Demo.4.8="Menu Item #8" Button.State.Demo.4.8="Hide" Button.Data.Demo.4.8="Slide.8" />
+    <Alias Initial.ID.D="Slide.1" />
+    <!-- SubPanel E Definitions -->
+    <Alias Button.Text.Demo.5.1="Menu Item #1" Button.State.Demo.5.1="Hide" Button.Data.Demo.5.1="Slide.1" />
+    <Alias Button.Text.Demo.5.2="Menu Item #2" Button.State.Demo.5.2="Hide" Button.Data.Demo.5.2="Slide.2" />
+    <Alias Button.Text.Demo.5.3="Menu Item #3" Button.State.Demo.5.3="Hide" Button.Data.Demo.5.3="Slide.3" />
+    <Alias Button.Text.Demo.5.4="Menu Item #4" Button.State.Demo.5.4="Hide" Button.Data.Demo.5.4="Slide.4" />
+    <Alias Button.Text.Demo.5.5="Menu Item #5" Button.State.Demo.5.5="Hide" Button.Data.Demo.5.5="Slide.5" />
+    <Alias Button.Text.Demo.5.6="Menu Item #6" Button.State.Demo.5.6="Hide" Button.Data.Demo.5.6="Slide.6" />
+    <Alias Button.Text.Demo.5.7="Menu Item #7" Button.State.Demo.5.7="Hide" Button.Data.Demo.5.7="Slide.7" />
+    <Alias Button.Text.Demo.5.8="Menu Item #8" Button.State.Demo.5.8="Hide" Button.Data.Demo.5.8="Slide.8" />
+    <Alias Initial.ID.E="Slide.1" />
+    <!-- SubPanel F Definitions -->
+    <Alias Button.Text.Demo.6.1="Menu Item #1" Button.State.Demo.6.1="Hide" Button.Data.Demo.6.1="Slide.1" />
+    <Alias Button.Text.Demo.6.2="Menu Item #2" Button.State.Demo.6.2="Hide" Button.Data.Demo.6.2="Slide.2" />
+    <Alias Button.Text.Demo.6.3="Menu Item #3" Button.State.Demo.6.3="Hide" Button.Data.Demo.6.3="Slide.3" />
+    <Alias Button.Text.Demo.6.4="Menu Item #4" Button.State.Demo.6.4="Hide" Button.Data.Demo.6.4="Slide.4" />
+    <Alias Button.Text.Demo.6.5="Menu Item #5" Button.State.Demo.6.5="Hide" Button.Data.Demo.6.5="Slide.5" />
+    <Alias Button.Text.Demo.6.6="Menu Item #6" Button.State.Demo.6.6="Hide" Button.Data.Demo.6.6="Slide.6" />
+    <Alias Button.Text.Demo.6.7="Menu Item #7" Button.State.Demo.6.7="Hide" Button.Data.Demo.6.7="Slide.7" />
+    <Alias Button.Text.Demo.6.8="Menu Item #8" Button.State.Demo.6.8="Hide" Button.Data.Demo.6.8="Slide.8" />
+    <Alias Initial.ID.F="Slide.1" />
+    <!-- SubPanel G Definitions -->
+    <Alias Button.Text.Demo.7.1="Menu Item #1" Button.State.Demo.7.1="Hide" Button.Data.Demo.7.1="Slide.1" />
+    <Alias Button.Text.Demo.7.2="Menu Item #2" Button.State.Demo.7.2="Hide" Button.Data.Demo.7.2="Slide.2" />
+    <Alias Button.Text.Demo.7.3="Menu Item #3" Button.State.Demo.7.3="Hide" Button.Data.Demo.7.3="Slide.3" />
+    <Alias Button.Text.Demo.7.4="Menu Item #4" Button.State.Demo.7.4="Hide" Button.Data.Demo.7.4="Slide.4" />
+    <Alias Button.Text.Demo.7.5="Menu Item #5" Button.State.Demo.7.5="Hide" Button.Data.Demo.7.5="Slide.5" />
+    <Alias Button.Text.Demo.7.6="Menu Item #6" Button.State.Demo.7.6="Hide" Button.Data.Demo.7.6="Slide.6" />
+    <Alias Button.Text.Demo.7.7="Menu Item #7" Button.State.Demo.7.7="Hide" Button.Data.Demo.7.7="Slide.7" />
+    <Alias Button.Text.Demo.7.8="Menu Item #8" Button.State.Demo.7.8="Hide" Button.Data.Demo.7.8="Slide.8" />
+    <Alias Initial.ID.G="Slide.1" />
+    <!-- SubPanel G Definitions -->
+    <Alias Button.Text.Demo.8.1="Menu Item #1" Button.State.Demo.8.1="Hide" Button.Data.Demo.8.1="Slide.1" />
+    <Alias Button.Text.Demo.8.2="Menu Item #2" Button.State.Demo.8.2="Hide" Button.Data.Demo.8.2="Slide.2" />
+    <Alias Button.Text.Demo.8.3="Menu Item #3" Button.State.Demo.8.3="Hide" Button.Data.Demo.8.3="Slide.3" />
+    <Alias Button.Text.Demo.8.4="Menu Item #4" Button.State.Demo.8.4="Hide" Button.Data.Demo.8.4="Slide.4" />
+    <Alias Button.Text.Demo.8.5="Menu Item #5" Button.State.Demo.8.5="Hide" Button.Data.Demo.8.5="Slide.5" />
+    <Alias Button.Text.Demo.8.6="Menu Item #6" Button.State.Demo.8.6="Hide" Button.Data.Demo.8.6="Slide.6" />
+    <Alias Button.Text.Demo.8.7="Menu Item #7" Button.State.Demo.8.7="Hide" Button.Data.Demo.8.7="Slide.7" />
+    <Alias Button.Text.Demo.8.8="Menu Item #8" Button.State.Demo.8.8="Hide" Button.Data.Demo.8.8="Slide.8" />
+    <Alias Initial.ID.H="Slide.1" />
+  </AliasList>
+</MarvinExternalFile>

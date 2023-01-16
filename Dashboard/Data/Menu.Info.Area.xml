@@ -1,0 +1,113 @@
+<MarvinExternalFile>
+  <AliasList>
+    <Alias Placeholder.Image="$(AppDir)/Images/placeholder.png"/>
+    <!-- Main Panel Definitions -->
+    <Alias Button.Text.Info.Main.1="Container Experience Kits" Button.State.Info.Main.1="Show" Button.Data.Info.1.1="Slide.Grid.A" />
+    <Alias Button.Text.Info.Main.2="Containers Overview" Button.State.Info.Main.2="Show" Button.Data.Info.1.2="Slide.Grid.B" />
+    <Alias Button.Text.Info.Main.3="Container Bare Metal Reference Design" Button.State.Info.Main.3="Hide" Button.Data.Info.1.3="Slide.Grid.C" />
+    <Alias Button.Text.Info.Main.4="Enhanced Platform Awareness" Button.State.Info.Main.4="Show" Button.Data.Info.1.4="Slide.Grid.D" />
+    <Alias Button.Text.Info.Main.5="Kubernetes Networking" Button.State.Info.Main.5="Show" Button.Data.Info.1.5="Slide.Grid.E" />
+    <Alias Button.Text.Info.Main.6="Cable Use Case" Button.State.Info.Main.6="Show" Button.Data.Info.1.6="Slide.Grid.F" />
+    <Alias Button.Text.Info.Main.7="Telemetry" Button.State.Info.Main.7="Show" Button.Data.Info.1.7="Slide.Grid.G" />
+    <Alias Button.Text.Info.Main.8="Menu Item" Button.State.Info.Main.8="Hide" Button.Data.Info.1.8="Slide.Grid.H" />
+    <Alias Slide.Main.Location="$(AppDir)/Images/NFVExperienceKit.png" />
+    <Alias Initial.ID.Main="Slide.Grid.Main" />
+    <!-- SubPanel A Definitions -->
+    <Alias Button.Title.Info.Main.1.1="About Experience Kits" Button.Text.Info.1.1="About Experience Kits" Button.State.Info.1.1="Show" Button.1.Data.A="Slide.1" Slide.1.Location.A="$(Slide.Dir)/1.bmra_a1_overview.png" />
+    <Alias Button.Title.Info.Main.1.2="Industry Challenges" Button.Text.Info.1.2="Industry Challenges" Button.State.Info.1.2="Show" Button.2.Data.A="Slide.2" Slide.2.Location.A="$(Slide.Dir)/1.bmra_c1_industry_challenges.png" />
+    <Alias Button.Title.Info.Main.1.3="Industry Resolutions" Button.Text.Info.1.3="Industry Resolutions" Button.State.Info.1.3="Show" Button.3.Data.A="Slide.3" Slide.3.Location.A="$(Slide.Dir)/1.bmra_c2_industry_challenges.png" />
+    <Alias Button.Title.Info.Main.1.4="" Button.Text.Info.1.4="" Button.State.Info.1.4="Hide" Button.4.Data.A="Slide.4" Slide.4.Location.A="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.1.5="" Button.Text.Info.1.5="" Button.State.Info.1.5="Hide" Button.5.Data.A="Slide.5" Slide.5.Location.A="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.1.6="" Button.Text.Info.1.6="" Button.State.Info.1.6="Hide" Button.6.Data.A="Slide.6" Slide.6.Location.A="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.1.7="Available resources" Button.Text.Info.1.7="Available resources" Button.State.Info.1.7="Show" Button.7.Data.A="Slide.7" Slide.7.Location.A="$(Slide.Dir)/1.bmra_b1_resources.png" />
+    <Alias Button.Title.Info.Main.1.8="Document Locations" Button.Text.Info.1.8="Document Locations" Button.State.Info.1.8="Show" Button.8.Data.A="Slide.8" Slide.8.Location.A="$(Slide.Dir)/1.bmra_d1_document_locations.png" />
+    <Alias Button.Title.Info.Main.1.9="" Button.Text.Info.1.9="" Button.State.Info.1.9="Hide" Button.9.Data.A="Slide.5" Slide.9.Location.A="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.1.10="" Button.Text.Info.1.10="" Button.State.Info.1.10="Hide" Button.10.Data.A="Slide.6" Slide.10.Location.A="$(Placeholder.Image)" />
+    <Alias Initial.ID.A="Slide.1" />
+    <!-- SubPanel B Definitions -->
+    <Alias Initial.ID.D="Slide.1" />
+    <Alias Button.Title.Info.Main.2.1="Containers vs virtual machines" Button.Text.Info.2.1="Containers vs virtual machines" Button.State.Info.2.1="Show" Button.Data.Info.2.1="Slide.1" Slide.1.Location.B="$(Slide.Dir)/2.containers_a1_versus.png" />
+    <Alias Button.Title.Info.Main.2.2="Why use containers?" Button.Text.Info.2.2="Why use containers?" Button.State.Info.2.2="Show" Button.Data.Info.2.2="Slide.2" Slide.2.Location.B="$(Slide.Dir)/2.containers_b1_why.png" />
+    <Alias Button.Title.Info.Main.2.3="Kubernetes overview" Button.Text.Info.2.3="Kubernetes overview" Button.State.Info.2.3="Show" Button.Data.Info.2.3="Slide.3" Slide.3.Location.B="$(Slide.Dir)/2.containers_c1_k8s.png" />
+    <Alias Button.Title.Info.Main.2.4="Containers Networking Deployments Considerations" Button.Text.Info.2.4="Containers Networking Deployments" Button.State.Info.2.4="Show" Button.Data.Info.2.4="Slide.4" Slide.4.Location.B="$(Slide.Dir)/2.containers_d1_deployments.png" />
+    <Alias Button.Title.Info.Main.2.5="Containers Networking Deployments Considerations 2" Button.Text.Info.2.5="Containers Networking Deployments" Button.State.Info.2.5="Hide" Button.Data.Info.2.5="Slide.5" Slide.5.Location.B="$(Placeholder.Image)"  />
+    <Alias Button.Title.Info.Main.2.6="" Button.Text.Info.2.6="" Button.State.Info.2.6="Hide" Button.Data.Info.2.6="Slide.6" Slide.6.Location.B="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.2.7="" Button.Text.Info.2.7="" Button.State.Info.2.7="Hide" Button.Data.Info.2.7="Slide.7" Slide.7.Location.B="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.2.8="" Button.Text.Info.2.8="" Button.State.Info.2.8="Hide" Button.Data.Info.2.8="Slide.8" Slide.8.Location.B="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.2.9="" Button.Text.Info.2.9="" Button.State.Info.2.9="Hide" Button.Data.Info.2.9="Slide.7" Slide.9.Location.B="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.2.10="" Button.Text.Info.2.10="" Button.State.Info.2.10="Hide" Button.Data.Info.2.10="Slide.8" Slide.10.Location.B="$(Placeholder.Image)" />
+    <Alias Initial.ID.B="Slide.1" />
+    <!-- SubPanel C Definitions -->
+    <Alias Button.Title.Info.Main.3.1="" Button.Text.Info.3.1="" Button.State.Info.3.1="Hide" Button.Data.Info.3.1="Slide.1" Slide.1.Location.C="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.3.2="" Button.Text.Info.3.2="" Button.State.Info.3.2="Hide" Button.Data.Info.3.2="Slide.2" Slide.2.Location.C="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.3.3="" Button.Text.Info.3.3="" Button.State.Info.3.3="Hide" Button.Data.Info.3.3="Slide.3" Slide.3.Location.C="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.3.4="" Button.Text.Info.3.4="" Button.State.Info.3.4="Hide" Button.Data.Info.3.4="Slide.4" Slide.4.Location.C="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.3.5="" Button.Text.Info.3.5="" Button.State.Info.3.5="Hide" Button.Data.Info.3.5="Slide.5" Slide.5.Location.C="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.3.6="" Button.Text.Info.3.6="" Button.State.Info.3.6="Hide" Button.Data.Info.3.6="Slide.6" Slide.6.Location.C="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.3.7="" Button.Text.Info.3.7="" Button.State.Info.3.7="Hide" Button.Data.Info.3.7="Slide.7" Slide.7.Location.C="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.3.8="" Button.Text.Info.3.8="" Button.State.Info.3.8="Hide" Button.Data.Info.3.8="Slide.8" Slide.8.Location.C="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.3.9="" Button.Text.Info.3.9="" Button.State.Info.3.9="Hide" Button.Data.Info.3.9="Slide.7" Slide.9.Location.C="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.3.10="" Button.Text.Info.3.10="" Button.State.Info.3.10="Hide" Button.Data.Info.3.10="Slide.8" Slide.10.Location.C="$(Placeholder.Image)" />
+    <Alias Initial.ID.C="Slide.1" />
+    <!-- SubPanel D Definitions -->
+    <Alias Button.Title.Info.Main.4.1="Enhanced Platform Awareness Overview" Button.Text.Info.4.1="Enhanced Platform Awareness Overview" Button.State.Info.4.1="Show" Button.Data.Info.4.1="Slide.1" Slide.1.Location.D="$(Slide.Dir)/4.epa_a1_intro.png" />
+    <Alias Button.Title.Info.Main.4.2="Node Feature Discovery (NFD)" Button.Text.Info.4.2="Node Feature Discovery (NFD)" Button.State.Info.4.2="Show" Button.Data.Info.4.2="Slide.2" Slide.2.Location.D="$(Slide.Dir)/4.epa_a1_nfd.png" />
+    <Alias Button.Title.Info.Main.4.3="CPU Manager for Kubernetes (CMK) – CPU Pinning and Isolation" Button.Text.Info.4.3="CPU Manager for Kubernetes (CMK)" Button.State.Info.4.3="Show" Button.Data.Info.4.3="Slide.3" Slide.3.Location.D="$(Slide.Dir)/4.epa_b1_cmk.png" />
+    <Alias Button.Title.Info.Main.4.4="Experience Kit Example: CPU Manager for Kubernetes (CMK) Benchmark Test" Button.Text.Info.4.4="Example: CMK Benchmark Test" Button.State.Info.4.4="Show" Button.Data.Info.4.4="Slide.4" Slide.4.Location.D="$(Slide.Dir)/4.epa_c1_benchmark.png" />
+    <Alias Button.Title.Info.Main.4.5="Hugepage Native Support in Kubernetes" Button.Text.Info.4.5="Hugepage Native Support" Button.State.Info.4.5="Show" Button.Data.Info.4.5="Slide.5" Slide.5.Location.D="$(Slide.Dir)/4.epa_d1_hugepages.png" />
+    <Alias Button.Title.Info.Main.4.6="DPDK-SRIOV CNI Plugin" Button.Text.Info.4.6="DPDK-SRIOV CNI Plugin" Button.State.Info.4.6="Show" Button.Data.Info.4.2="Slide.6" Slide.6.Location.D="$(Slide.Dir)/5.k8snetworking_b1_dpdk-sriov-plugin.png" />
+    <Alias Button.Title.Info.Main.4.7="VHOST-USER CNI Plugin" Button.Text.Info.4.7="VHOST-USER CNI Plugin" Button.State.Info.4.7="Show" Button.Data.Info.4.3="Slide.7" Slide.7.Location.D="$(Slide.Dir)/5.k8snetworking_c1_vhost-user-plugin.png" />
+    <Alias Button.Title.Info.Main.4.8="Test Setup - Enhanced Platform Awareness" Button.Text.Info.4.8="Test Setup" Button.State.Info.4.8="Show" Button.Data.Info.4.8="Slide.8" Slide.8.Location.D="$(Slide.Dir)/4.epa_e1_test_setup.png" />
+    <Alias Button.Title.Info.Main.4.9="Test Results - Enhanced Platform Awareness" Button.Text.Info.4.9="Test Results" Button.State.Info.4.9="Show" Button.Data.Info.4.9="Slide.9" Slide.9.Location.D="$(Slide.Dir)/4.epa_f1_test_results.png" />
+    <Alias Button.Title.Info.Main.4.10="Test Details - Enhanced Platform Awareness" Button.Text.Info.4.10="Test Details" Button.State.Info.4.10="Show" Button.Data.Info.4.10="Slide.10" Slide.10.Location.D="$(Slide.Dir)/4.epa_g1_test_details.png" />
+    <Alias Initial.ID.D="Slide.1" />
+    <!-- SubPanel E Definitions -->
+    <Alias Button.Title.Info.Main.5.1="Multiple Network Interfaces for VNFs" Button.Text.Info.5.1="Multiple Network Interfaces" Button.State.Info.5.1="Show" Button.Data.Info.5.1="Slide.1" Slide.1.Location.E="$(Slide.Dir)/5.k8snetworking_a1_vnfs.png" />
+    <Alias Button.Title.Info.Main.5.2="Test Setup - Multi Network Interfaces" Button.Text.Info.5.2="Test Setup" Button.State.Info.5.2="Show" Button.Data.Info.5.2="Slide.2" Slide.2.Location.E="$(Slide.Dir)/5.k8snetworking_d1_test_setup.png" />
+    <Alias Button.Title.Info.Main.5.3="Test Results - Multi Network Interfaces" Button.Text.Info.5.3="Test Results" Button.State.Info.5.3="Show" Button.Data.Info.5.3="Slide.3" Slide.3.Location.E="$(Slide.Dir)/5.k8snetworking_e1_test_results.png" />
+    <Alias Button.Title.Info.Main.5.4="Test Details - Multi Network Interfaces" Button.Text.Info.5.4="Test Details" Button.State.Info.5.4="Show" Button.Data.Info.5.4="Slide.4" Slide.4.Location.E="$(Slide.Dir)/5.k8snetworking_f1_test_details.png" />
+    <Alias Button.Title.Info.Main.5.5="" Button.Text.Info.5.5="" Button.State.Info.5.5="Hide" Button.Data.Info.5.5="Slide.7" Slide.5.Location.E="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.5.6="" Button.Text.Info.5.6="" Button.State.Info.5.6="Hide" Button.Data.Info.5.6="Slide.7" Slide.6.Location.E="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.5.7="" Button.Text.Info.5.7="" Button.State.Info.5.7="Hide" Button.Data.Info.5.7="Slide.7" Slide.7.Location.E="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.5.8="" Button.Text.Info.5.8="" Button.State.Info.5.8="Hide" Button.Data.Info.5.8="Slide.8" Slide.8.Location.E="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.5.9="" Button.Text.Info.5.9="" Button.State.Info.5.9="Hide" Button.Data.Info.5.9="Slide.9" Slide.9.Location.E="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.5.10="" Button.Text.Info.5.10="" Button.State.Info.5.10="Hide" Button.Data.Info.5.10="Slide.10" Slide.10.Location.E="$(Placeholder.Image)" />
+    <Alias Initial.ID.E="Slide.1" />
+    <!-- SubPanel F Definitions -->
+    <Alias Button.Title.Info.Main.6.1="CCAP Appliance Migration to NFV" Button.Text.Info.6.1="CCAP Appliance Migration to NFV" Button.State.Info.6.1="Show" Button.Data.Info.6.1="Slide.1" Slide.1.Location.F="$(Slide.Dir)/7.cable_a1_migration_to_nfv.png" />
+    <Alias Button.Title.Info.Main.6.2="" Button.Text.Info.6.2="Menu Item #2" Button.State.Info.6.2="Hide" Button.Data.Info.6.2="Slide.2" Slide.2.Location.F="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.6.3="" Button.Text.Info.6.3="Menu Item #3" Button.State.Info.6.3="Hide" Button.Data.Info.6.3="Slide.3" Slide.3.Location.F="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.6.4="Test Setup" Button.Text.Info.6.4="Test Setup" Button.State.Info.6.4="Show" Button.Data.Info.6.4="Slide.4" Slide.4.Location.F="$(Slide.Dir)/7.cable_d1_test_setup.png" />
+    <Alias Button.Title.Info.Main.6.5="Test Results - VCMTS Throughput &amp; CPU Cycles" Button.Text.Info.6.5="Test Results 1" Button.State.Info.6.5="Show" Button.Data.Info.6.5="Slide.5" Slide.5.Location.F="$(Slide.Dir)/7.cable_e1_test_results_throughput.png" />
+    <Alias Button.Title.Info.Main.6.6="Test Results - VCMTS Service Group Density on Xeon SP" Button.Text.Info.6.6="Test Results 2" Button.State.Info.6.6="Show" Button.Data.Info.6.6="Slide.6" Slide.6.Location.F="$(Slide.Dir)/7.cable_f1_test_results_sg_density.png" />
+    <Alias Button.Title.Info.Main.6.7="Test Details" Button.Text.Info.6.7="Test Details" Button.State.Info.6.7="Show" Button.Data.Info.6.7="Slide.7" Slide.7.Location.F="$(Slide.Dir)/7.cable_g1_test_details.png" />
+    <Alias Button.Title.Info.Main.6.8="" Button.Text.Info.6.8="" Button.State.Info.6.8="Hide" Button.Data.Info.6.8="Slide.8" Slide.8.Location.F="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.6.9="" Button.Text.Info.6.9="" Button.State.Info.6.9="Hide" Button.Data.Info.6.9="Slide.8" Slide.9.Location.F="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.6.10="" Button.Text.Info.6.10="" Button.State.Info.6.10="Hide" Button.Data.Info.6.10="Slide.8" Slide.10.Location.F="$(Placeholder.Image)" />
+    <Alias Initial.ID.F="Slide.1" />
+    <!-- SubPanel G Definitions -->
+    <Alias Button.Title.Info.Main.7.1="Platform Telemetry System Support in Kubernetes" Button.Text.Info.7.1="Platform Telemetry System Support" Button.State.Info.7.1="Show" Button.Data.Info.7.1="Slide.1" Slide.1.Location.G="$(Slide.Dir)/6.telemetry_a1_support_in_k8s.png" />
+    <Alias Button.Title.Info.Main.7.2="Monitoring Overview" Button.Text.Info.7.2="Monitoring Overview" Button.State.Info.7.2="Show" Button.Data.Info.7.2="Slide.2" Slide.2.Location.G="$(Slide.Dir)/6.telemetry_b1_monitoring.png" />
+    <Alias Button.Title.Info.Main.7.3="Test Setup Monitoring" Button.Text.Info.7.3="Test Setup Monitoring" Button.State.Info.7.3="Show" Button.Data.Info.7.3="Slide.3" Slide.3.Location.G="$(Slide.Dir)/6.telemetry_c1_test_setup.png" />
+    <Alias Button.Title.Info.Main.7.4="Test Details Monitoring" Button.Text.Info.7.4="Test Details Monitoring" Button.State.Info.7.4="Show" Button.Data.Info.7.4="Slide.4" Slide.4.Location.G="$(Slide.Dir)/6.telemetry_d1_test_details.png" />
+    <Alias Button.Title.Info.Main.7.5="Corrective Action Overview" Button.Text.Info.7.5="Corrective Action Overview" Button.State.Info.7.5="Show" Button.Data.Info.7.5="Slide.5" Slide.5.Location.G="$(Slide.Dir)/6.telemetry_e1_corrective_action.png" />
+    <Alias Button.Title.Info.Main.7.6="Test Setup Corrective Action" Button.Text.Info.7.6="Test Setup Corrective Action" Button.State.Info.7.6="Show" Button.Data.Info.7.6="Slide.6" Slide.6.Location.G="$(Slide.Dir)/6.telemetry_f1_test_setup.png" />
+    <Alias Button.Title.Info.Main.7.7="Test Details Corrective Action" Button.Text.Info.7.7="Test Details Corrective Action" Button.State.Info.7.7="Show" Button.Data.Info.7.7="Slide.7" Slide.7.Location.G="$(Slide.Dir)/6.telemetry_g1_test_details.png" />
+    <Alias Button.Title.Info.Main.7.8="" Button.Text.Info.7.8="" Button.State.Info.7.8="Hide" Button.Data.Info.7.8="Slide.8" Slide.8.Location.G="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.7.9="" Button.Text.Info.7.9="" Button.State.Info.7.9="Hide" Button.Data.Info.7.9="Slide.9" Slide.9.Location.G="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.7.10="" Button.Text.Info.7.10="" Button.State.Info.7.10="Hide" Button.Data.Info.7.10="Slide.9" Slide.10.Location.G="$(Placeholder.Image)" />
+    <Alias Initial.ID.G="Slide.1" />
+    <!-- SubPanel H Definitions -->
+    <Alias Button.Title.Info.Main.8.1="" Button.Text.Info.8.1="Menu Item #1" Button.State.Info.8.1="Show" Button.Data.Info.8.1="Slide.1" Slide.1.Location.H="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.8.2="" Button.Text.Info.8.2="Menu Item #2" Button.State.Info.8.2="Show" Button.Data.Info.8.2="Slide.2" Slide.2.Location.H="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.8.3="" Button.Text.Info.8.3="Menu Item #3" Button.State.Info.8.3="Show" Button.Data.Info.8.3="Slide.3" Slide.3.Location.H="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.8.4="" Button.Text.Info.8.4="Menu Item #4" Button.State.Info.8.4="Show" Button.Data.Info.8.4="Slide.4" Slide.4.Location.H="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.8.5="" Button.Text.Info.8.5="Menu Item #5" Button.State.Info.8.5="Show" Button.Data.Info.8.5="Slide.5" Slide.5.Location.H="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.8.6="" Button.Text.Info.8.6="Menu Item #6" Button.State.Info.8.6="Show" Button.Data.Info.8.6="Slide.6" Slide.6.Location.H="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.8.7="" Button.Text.Info.8.7="Menu Item #7" Button.State.Info.8.7="Show" Button.Data.Info.8.7="Slide.7" Slide.7.Location.H="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.8.8="" Button.Text.Info.8.8="Menu Item #8" Button.State.Info.8.8="Show" Button.Data.Info.8.8="Slide.8" Slide.8.Location.H="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.8.9="" Button.Text.Info.8.9="Menu Item #8" Button.State.Info.8.9="Show" Button.Data.Info.8.9="Slide.9" Slide.9.Location.H="$(Placeholder.Image)" />
+    <Alias Button.Title.Info.Main.8.10="" Button.Text.Info.8.10="Menu Item #8" Button.State.Info.8.10="Show" Button.Data.Info.8.10="Slide.8" Slide.10.Location.H="$(Placeholder.Image)" />
+    <Alias Initial.ID.H="Slide.1" />
+  </AliasList>
+</MarvinExternalFile>

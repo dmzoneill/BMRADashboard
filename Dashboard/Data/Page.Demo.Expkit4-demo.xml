@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MarvinExternalFile>
+  <AliasList>
+    <Import>$(AppDir)/Aliases.xml</Import>
+    <Import>$(AppDir)/Demos/expkit4/Definitions/expkit4.xml</Import>
+  </AliasList>
+
+  <Grid column="0" row="0" hgap="20" vgap="20" Align="S">
+    <!-- Before -->
+    <Grid row="1" column="0" Width="$(demo.panel.left.width)" Height="$(demo.panel.height)" Align="N">
+      <StyleOverride><Item>-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0);</Item></StyleOverride>
+      <!-- Header -->
+      <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)">
+        <StyleOverride>
+          <Item>
+            -fx-background-color: $(darkorange-gradient);
+            -fx-border-radius: 10 10 0 0;
+            -fx-background-radius: 10 10 0 0;
+          </Item>
+        </StyleOverride>
+        <Widget File="Text/Text.xml" row="0" column="0" Width="$(demo.panel.left.width)" Height="$(demo.panel.title.height)">
+          <InitialValue>$(demo.before.title)</InitialValue>
+          <StyleOverride>
+            <Item>-fx-font-family: $(demo.grid.font);</Item>
+          </StyleOverride>
+        </Widget>
+      </Grid>
+      <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Height="662" Align="Center" vgap="10">
+        <StyleOverride>
+          <Item>
+            -fx-background-color: $(demo.panel.background);
+          </Item>
+        </StyleOverride>
+        <Widget File="Text/Text.xml" row="$(NextRowAlias)" column="$(CurrentColumnAlias)">
+          <InitialValue>AES-NI Single core bitrate</InitialValue>
+          <StyleOverride>
+            <Item>-fx-font-family: $(demo.grid.font); -fx-font-size: 2em;</Item>
+          </StyleOverride>
+        </Widget>
+        <!-- Gauges -->
+        <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" hgap="20">
+          <Widget File="Gauge/GaugeBar.xml" row="$(CurrentRowAlias)" column="$(CurrentColumnAlias)" Width="$(demo.gauge.width)" Height="$(demo.gauge.height)" Align="Center">
+            <Title>Rx</Title>
+            <UnitsOverride>Gbps</UnitsOverride>
+            <MinionSrc ID="$(minion.source.3.1)" Namespace="$(SUT.NS.1)" />
+            <ValueRange Min="0" Max="82.54" />
+            <StyleOverride File="GaugeBar-before.css" />
+          </Widget>
+          <Widget File="Gauge/GaugeBar.xml" row="$(CurrentRowAlias)" column="$(NextColumnAlias)" Width="$(demo.gauge.width)" Height="$(demo.gauge.height)" Align="Center">
+            <Title>Tx</Title>
+            <UnitsOverride>Gbps</UnitsOverride>
+            <MinionSrc ID="$(minion.source.3.2)" Namespace="$(SUT.NS.1)" />
+            <ValueRange Min="0" Max="82.54" />
+            <StyleOverride File="GaugeBar-before.css" />
+          </Widget>
+        </Grid>
+        <!-- Histogram -->
+        <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)">
+          <Widget File="Chart/ChartBar.xml" row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Width="$(demo.chart.width)" Height="$(demo.chart.height)" Align="Center">
+            <Title>Per Scenario Bitrate</Title>
+            <UnitsOverride>Gbps</UnitsOverride>
+            <xAxis Label="Scenario"/>
+            <yAxis Label="Gbps" MaxValue="10"/>
+            <Series ID="Rx" Label="Rx"/>
+            <Series ID="Tx" Label="Tx"/>
+            <SeriesSet Title="CRC">
+              <MinionSrc ID="$(minion.source.1.1)" Namespace="$(SUT.NS.1)" SeriesID="Rx"/>
+              <MinionSrc ID="$(minion.source.1.2)" Namespace="$(SUT.NS.1)" SeriesID="Tx"/>
+            </SeriesSet>
+            <SeriesSet Title="Turbo">
+              <MinionSrc ID="$(minion.source.2.1)" Namespace="$(SUT.NS.1)" SeriesID="Rx"/>
+              <MinionSrc ID="$(minion.source.2.2)" Namespace="$(SUT.NS.1)" SeriesID="Tx"/>
+            </SeriesSet>
+            <SeriesSet Title="AES-NI">
+              <MinionSrc ID="$(minion.source.3.1)" Namespace="$(SUT.NS.1)" SeriesID="Rx"/>
+              <MinionSrc ID="$(minion.source.3.2)" Namespace="$(SUT.NS.1)" SeriesID="Tx"/>
+            </SeriesSet>
+            <SeriesSet Title="QAT">
+              <MinionSrc ID="$(minion.source.4.1)" Namespace="$(SUT.NS.1)" SeriesID="Rx"/>
+              <MinionSrc ID="$(minion.source.4.2)" Namespace="$(SUT.NS.1)" SeriesID="Tx"/>
+            </SeriesSet>
+            <StyleOverride>
+              <Item>
+                CHART_COLOR_1: $(blue);
+                CHART_COLOR_2: $(light-blue);
+              </Item>
+            </StyleOverride>
+          </Widget>
+        </Grid>
+        <Widget File="Image/ImageScale.xml" row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Height="$(demo.hw.height)" Width="$(demo.hw.width)">
+          <Source>$(CustomDir)/Images/scale_2.png</Source>
+        </Widget>
+      </Grid>
+    </Grid>
+    <!-- Key takeaway -->
+    <Grid row="$(CurrentRowAlias)" column="$(NextColumnAlias)" Width="$(demo.panel.center.width)" Height="$(demo.panel.height)">
+      <StyleOverride><Item>-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0);</Item></StyleOverride>
+      <StyleOverride>
+        <Item>
+          -fx-background-color: $(demo.panel.background);
+          -fx-border-radius: 10 10 0 0;
+          -fx-background-radius: 10 10 0 0;
+        </Item>
+      </StyleOverride>
+      <!-- Header -->
+      <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)">
+        <StyleOverride>
+          <Item>
+            -fx-background-color: $(blue-gradient);
+            -fx-border-radius: 10 10 0 0;
+            -fx-background-radius: 10 10 0 0;
+          </Item>
+        </StyleOverride>
+        <Widget File="Text/Text.xml" row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Width="$(demo.panel.center.width)" Height="$(demo.panel.title.height)">
+          <InitialValue>$(demo.message.title)</InitialValue>
+          <StyleOverride>
+            <Item>-fx-font-family: $(demo.grid.font);</Item>
+          </StyleOverride>
+        </Widget>
+      </Grid>
+      <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Height="662" Align="Center" Width="$(demo.panel.center.width)">
+        <!-- Takeaways -->
+        <Widget File="Image/ImageScale.xml" row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Height="$(demo.takeaways.height)" Align="Center">
+          <Source>$(CustomDir)/Images/takeaways_1.png</Source>
+        </Widget>
+      </Grid>
+    </Grid>
+    <!-- After -->
+    <Grid row="$(CurrentRowAlias)" column="$(NextColumnAlias)" Width="$(demo.panel.right.width)" Height="$(demo.panel.height)">
+      <StyleOverride><Item>-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0);</Item></StyleOverride>
+      <!-- Header -->
+      <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)">
+        <StyleOverride>
+          <Item>
+            -fx-background-color: $(darkgreen-gradient);
+            -fx-border-radius: 10 10 0 0;
+            -fx-background-radius: 10 10 0 0;
+          </Item>
+        </StyleOverride>
+        <Widget File="Text/Text.xml" row="0" column="0" Width="$(demo.panel.right.width)" Height="$(demo.panel.title.height)">
+          <InitialValue>$(demo.after.title)</InitialValue>
+          <StyleOverride>
+            <Item>-fx-font-family: $(demo.grid.font);</Item>
+          </StyleOverride>
+        </Widget>
+      </Grid>
+      <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Height="662" Align="Center" vgap="10">
+        <StyleOverride>
+          <Item>
+            -fx-background-color: $(demo.panel.background);
+          </Item>
+        </StyleOverride>
+        <Widget File="Text/Text.xml" row="$(NextRowAlias)" column="$(CurrentColumnAlias)">
+          <InitialValue>AES-NI Multicore bitrate</InitialValue>
+          <StyleOverride>
+            <Item>-fx-font-family: $(demo.grid.font); -fx-font-size: 2em;</Item>
+          </StyleOverride>
+        </Widget>
+        <!-- Gauges -->
+        <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" hgap="20">
+          <Widget File="Gauge/GaugeBar.xml" row="$(CurrentRowAlias)" column="$(CurrentColumnAlias)" Width="$(demo.gauge.width)" Height="$(demo.gauge.height)" Align="Center">
+            <Title>Rx</Title>
+            <UnitsOverride>Gbps</UnitsOverride>
+            <MinionSrc ID="$(minion.source.5.1)" Namespace="$(SUT.NS.2)" />
+            <ValueRange Min="0" Max="82.54" />
+            <StyleOverride File="GaugeBar-After.css" />
+          </Widget>
+          <Widget File="Gauge/GaugeBar.xml" row="$(CurrentRowAlias)" column="$(NextColumnAlias)" Width="$(demo.gauge.width)" Height="$(demo.gauge.height)" Align="Center">
+            <Title>Tx</Title>
+            <UnitsOverride>Gbps</UnitsOverride>
+            <MinionSrc ID="$(minion.source.5.2)" Namespace="$(SUT.NS.2)" />
+            <ValueRange Min="0" Max="82.54" />
+            <StyleOverride File="GaugeBar-After.css" />
+          </Widget>
+        </Grid>
+        <!-- Histogram -->
+        <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)">
+          <Widget File="Chart/ChartBar.xml" row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Width="$(demo.chart.width)" Height="$(demo.chart.height)" Align="Center">
+            <Title>AES-NI scenario: per instance bitrate</Title>
+            <UnitsOverride>Gbps</UnitsOverride>
+            <xAxis Label="vCMTS Instance ID"/>
+            <yAxis Label="Gbps" MaxValue="10"/>
+
+            <Series ID="Rx" Label="Rx"/>
+            <Series ID="Tx" Label="Tx"/>
+
+            <SeriesSet Title="1">
+              <MinionSrc ID="$(minion.source.6.1)" Namespace="$(SUT.NS.2)" SeriesID="Rx"/>
+              <MinionSrc ID="$(minion.source.6.2)" Namespace="$(SUT.NS.2)" SeriesID="Tx"/>
+            </SeriesSet>
+            <SeriesSet Title="2">
+              <MinionSrc ID="$(minion.source.7.1)" Namespace="$(SUT.NS.2)" SeriesID="Rx"/>
+              <MinionSrc ID="$(minion.source.7.2)" Namespace="$(SUT.NS.2)" SeriesID="Tx"/>
+            </SeriesSet>
+            <SeriesSet Title="3">
+              <MinionSrc ID="$(minion.source.8.1)" Namespace="$(SUT.NS.2)" SeriesID="Rx"/>
+              <MinionSrc ID="$(minion.source.8.2)" Namespace="$(SUT.NS.2)" SeriesID="Tx"/>
+            </SeriesSet>
+            <SeriesSet Title="4">
+              <MinionSrc ID="$(minion.source.9.1)" Namespace="$(SUT.NS.2)" SeriesID="Rx"/>
+              <MinionSrc ID="$(minion.source.9.2)" Namespace="$(SUT.NS.2)" SeriesID="Tx"/>
+            </SeriesSet>
+            <SeriesSet Title="5">
+              <MinionSrc ID="$(minion.source.10.1)" Namespace="$(SUT.NS.2)" SeriesID="Rx"/>
+              <MinionSrc ID="$(minion.source.10.2)" Namespace="$(SUT.NS.2)" SeriesID="Tx"/>
+            </SeriesSet>
+            <SeriesSet Title="6">
+              <MinionSrc ID="$(minion.source.11.1)" Namespace="$(SUT.NS.2)" SeriesID="Rx"/>
+              <MinionSrc ID="$(minion.source.11.2)" Namespace="$(SUT.NS.2)" SeriesID="Tx"/>
+            </SeriesSet>
+            <SeriesSet Title="7">
+              <MinionSrc ID="$(minion.source.12.1)" Namespace="$(SUT.NS.2)" SeriesID="Rx"/>
+              <MinionSrc ID="$(minion.source.12.2)" Namespace="$(SUT.NS.2)" SeriesID="Tx"/>
+            </SeriesSet>
+            <SeriesSet Title="8">
+              <MinionSrc ID="$(minion.source.13.1)" Namespace="$(SUT.NS.2)" SeriesID="Rx"/>
+              <MinionSrc ID="$(minion.source.13.2)" Namespace="$(SUT.NS.2)" SeriesID="Tx"/>
+            </SeriesSet>
+            <SeriesSet Title="9">
+              <MinionSrc ID="$(minion.source.14.1)" Namespace="$(SUT.NS.2)" SeriesID="Rx"/>
+              <MinionSrc ID="$(minion.source.14.2)" Namespace="$(SUT.NS.2)" SeriesID="Tx"/>
+            </SeriesSet>
+            <SeriesSet Title="10">
+              <MinionSrc ID="$(minion.source.15.1)" Namespace="$(SUT.NS.2)" SeriesID="Rx"/>
+              <MinionSrc ID="$(minion.source.15.2)" Namespace="$(SUT.NS.2)" SeriesID="Tx"/>
+            </SeriesSet>
+            <SeriesSet Title="11">
+              <MinionSrc ID="$(minion.source.16.1)" Namespace="$(SUT.NS.2)" SeriesID="Rx"/>
+              <MinionSrc ID="$(minion.source.16.2)" Namespace="$(SUT.NS.2)" SeriesID="Tx"/>
+            </SeriesSet>
+            <SeriesSet Title="12">
+              <MinionSrc ID="$(minion.source.17.1)" Namespace="$(SUT.NS.2)" SeriesID="Rx"/>
+              <MinionSrc ID="$(minion.source.17.2)" Namespace="$(SUT.NS.2)" SeriesID="Tx"/>
+            </SeriesSet>
+            <StyleOverride>
+              <Item>
+                CHART_COLOR_1: $(blue);
+                CHART_COLOR_2: $(light-blue);
+                -fx-bar-gap: 0;
+                -fx-category-gap: 2;
+              </Item>
+            </StyleOverride>
+          </Widget>
+          <Widget File="Image/DynamicImage.xml" row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Height="$(demo.hw.height)" Width="$(demo.hw.width)">
+            <MinionSrc ID="Scale" Namespace="Expkit4" />
+            <Initial ID="0" />
+            <Image Source="$(CustomDir)/Images/scale_0.png" ID="0" />
+            <Image Source="$(CustomDir)/Images/scale_2.png" ID="1" />
+            <Image Source="$(CustomDir)/Images/scale_4.png" ID="2" />
+            <Image Source="$(CustomDir)/Images/scale_8.png" ID="3" />
+            <Image Source="$(CustomDir)/Images/scale_12.png" ID="4" />
+            <Image Source="$(CustomDir)/Images/scale_0.png" ID="5" />
+            <Image Source="$(CustomDir)/Images/scale_0.png" ID="6" />
+          </Widget>
+        </Grid>
+      </Grid>
+    </Grid>
+    <!-- Tagline -->
+    <Grid row="2" column="0" Width="1510" colspan="3" Height="65">
+      <Peekaboo ID="Tagline" Namespace="Expkit4" Default="Hide" />
+      <StyleOverride>
+        <Item>
+          -fx-background-color: $(demo.panel.title.background);
+          -fx-border-radius: 10 10 10 10;
+          -fx-background-radius: 10 10 10 10;
+          -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0);
+        </Item>
+      </StyleOverride>
+      <For Count="4" StartValue="1" CurrentValueAlias="i">
+        <Widget File="Text/Text.xml" row="0" column="0" Height="65">
+          <InitialValue>Using </InitialValue>
+          <StyleOverride>
+            <Item>-fx-font-size: 3em;</Item>
+          </StyleOverride>
+          <Peekaboo ID="Tagline.$(i)" Namespace="Expkit4" Default="Hide" />
+        </Widget>
+        <Widget File="Text/Text.xml" row="0" column="1" Height="65">
+          <InitialValue>$(Expkit4.demo.Tagline.Size.$(i))</InitialValue>
+          <StyleOverride>
+            <Item>-fx-font-size: 3em;-fx-text-fill: $(yellow); -fx-font-weight: bold;</Item>
+          </StyleOverride>
+          <Peekaboo ID="Tagline.$(i)" Namespace="Expkit4" Default="Hide" />
+        </Widget>
+        <Widget File="Text/Text.xml" row="0" column="2" Height="65">
+          <InitialValue>$(Expkit4.demo.Tagline.Start)</InitialValue>
+          <StyleOverride>
+            <Item>-fx-font-size: 3em;</Item>
+          </StyleOverride>
+          <Peekaboo ID="Tagline.$(i)" Namespace="Expkit4" Default="Hide" />
+        </Widget>
+        <Widget File="Text/Text.xml" row="0" column="3" Height="65">
+          <InitialValue>$(Expkit4.demo.Tagline.Gain.$(i))</InitialValue>
+          <StyleOverride>
+            <Item>-fx-font-size: 3em; -fx-text-fill: $(yellow); -fx-font-weight: bold;</Item>
+          </StyleOverride>
+          <Peekaboo ID="Tagline.$(i)" Namespace="Expkit4" Default="Hide" />
+        </Widget>
+      </For>
+    </Grid>
+  </Grid>
+</MarvinExternalFile>

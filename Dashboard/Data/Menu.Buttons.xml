@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MarvinExternalFile>
+  <AliasList>
+    <Import>$(AppDir)/Aliases.xml</Import>
+    <DefaultAlias Button.Width="250" Button.Height="26" Button.Color="$(dark-blue)" Button.TextColor="$(white)" />
+    <DefaultAlias Button.Text.Main.Back="Main Menu" Button.PBState.Main.Back="Show"/>
+    <DefaultAlias Button.Color.Demo.Back="$(green)" Button.Color.Info.Back="$(orange)" Button.Color.Legal.Back="$(blue)" Button.Text.Back="Back To Main Menu" Button.PBState.Back="Show"/>
+    <DefaultAlias BackButton.Main.text="Main Menu"/>
+    <DefaultAlias BackButton.1.text="Back to Main Menu"/>
+    <DefaultAlias BackButton.2.text="Back to Main Menu"/>
+    <DefaultAlias BackButton.3.text="Back to Main Menu"/>
+    <DefaultAlias BackButton.4.text="Back to Main Menu"/>
+    <DefaultAlias BackButton.5.text="Back to Main Menu"/>
+    <DefaultAlias BackButton.6.text="Back to Main Menu"/>
+    <DefaultAlias BackButton.7.text="Back to Main Menu"/>
+    <DefaultAlias BackButton.8.text="Back to Main Menu"/>
+    <DefaultAlias BackButton.9.text="Back to Main Menu"/>
+  </AliasList>
+  <!-- Buttons -->
+  <Grid>
+    <Grid row="0" column="0" vgap="4" Align="N">
+      <Grid File="Widget/Button/Button-$(Area).xml" ICLEAR_TASK="Button.Task.$(Area).Back" ICLEAR_COLOR="$(Button.Color.$(Area).Back)" ICLEAR_TEXT_COLOR="$(Button.TextColor)" ICLEAR_TEXT="$(BackButton.$(PageID).text)" ICLEAR_HOVER="True" row="$(NextRowAlias)" column="$(CurrentColumnAlias)" ICLEAR_WIDTH="$(Button.Width)" ICLEAR_HEIGHT="$(Button.Height)" PBState="$(Button.PBState.Back)"/>
+      <For Count="$(ButtonsCount)" StartValue="1" CurrentValueAlias="i">
+        <Grid File="Widget/Button/Button-$(Area).xml" ICLEAR_TASK="Button.Task.$(Area).$(PageID).$(i)" ICLEAR_PEEKABOO_NAMESPACE="Button.Peekaboo" ICLEAR_PEEKABOO_ID="$(Area).$(PageID).$(i)" ICLEAR_COLOR="$(Button.Color)" ICLEAR_TEXT_COLOR="$(Button.TextColor)" ICLEAR_TEXT="$(Button.Text.$(Area).$(PageID).$(i))" ICLEAR_HOVER="True" row="$(NextRowAlias)" column="$(CurrentColumnAlias)" ICLEAR_WIDTH="$(Button.Width)" ICLEAR_HEIGHT="$(Button.Height)" PBState="$(Button.State.$(Area).$(PageID).$(i))" />
+      </For>
+    </Grid>
+  </Grid>
+</MarvinExternalFile>

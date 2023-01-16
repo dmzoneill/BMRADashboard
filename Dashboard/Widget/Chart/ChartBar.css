@@ -1,0 +1,23 @@
+/* 
+    Document   : nothing yet
+*/
+
+.chart-bar {
+    -fx-background: #003C71;
+}
+
+.chart-title {
+    -fx-font-family: "Intel Clear Pro";
+    -fx-font-size: 2em;
+}
+
+.chart-legend {
+    -fx-font-size: 1.6em;    
+    -fx-font-family: "Intel Clear Pro";
+    -fx-background-color: transparent;
+}
+
+.axis {
+    -fx-font-size: 1.2em;
+    -fx-tick-label-font: 1.1em "Intel Clear";
+}

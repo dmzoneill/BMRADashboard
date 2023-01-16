@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+##############################################################################
+#  Copyright (c) 2016 by Patrick Kutch https://github.com/PatrickKutch
+# 
+# Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+# 
+#      http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+##############################################################################
+#    File Abstract: 
+#    Top Right Corner Swoop
+#
+##############################################################################
+-->
+<MarvinExternalFile>
+  <AliasList>
+    <Import>Widget\ICLEAR\ICLEAR.xml</Import>
+    <DefaultAlias ICLEAR_CORNER_HGAP="$(RIGHT_GAP)" ICLEAR_CORNER_VGAP="$(BOTTOM_GAP)" />
+    <DefaultAlias ICLEAR_WIDTH="$(HORIZONTAL_BAR_HEIGHT)" />
+    <DefaultAlias ICLEAR_HEIGHT="$(HORIZONTAL_BAR_HEIGHT)" />
+    <DefaultAlias ICLEAR_TEXT="" />
+    <DefaultAlias ICLEAR_TEXT_LOC="SW" />
+  </AliasList>
+  <Grid hgap="0" vgap="0" Align="SE">
+    <PaddingOverride top="$(TOP_PAD)" bottom="$(BOTTOM_PAD)" right="$(BOTTOM_PAD)" left="$(LEFT_PAD)" />
+    <StyleOverride>
+      <Item>-fx-background-color: transparent</Item>
+    </StyleOverride>
+    <Widget File="Spacer.xml" Height="1" Width="$(ICLEAR_CORNER_HGAP)" row="0" column="1" />
+    <Widget File="ICLEAR/ICLEARWidget.xml" row="0" column="0" Width="$(ICLEAR_WIDTH)" Height="$(ICLEAR_HEIGHT)" Align="$(ICLEAR_TEXT_LOC)" Task="$(ICLEAR_TASK)">
+      <InitialValue>$(ICLEAR_TEXT)</InitialValue>
+      <MinionSrc Namespace="$(ICLEAR_NAMESPACE)" ID="$(ICLEAR_ID)" />
+      <Peekaboo Namespace="$(ICLEAR_PEEKABOO_NAMESPACE)" ID="$(ICLEAR_PEEKABOO_ID)" />
+      <Shape>M0,0 a20,20 0 0 1 20,20 h -20</Shape>
+      <StyleOverride ID="$(ICLEAR_HOVER)">
+        <Item>-svg-main-color:$(ICLEAR_COLOR)</Item>
+        <Item>
+          -fx-font-size:$(ICLEAR_TEXT_SIZE);
+          -fx-text-fill:$(ICLEAR_TEXT_COLOR);
+          -fx-font-family:$(ICLEAR_TEXT_FONT);
+        </Item>
+        <Item>$(ICLEAR_CUSTOM_STYLE)</Item>
+      </StyleOverride>
+    </Widget>
+    <Widget File="Spacer.xml" Width="1" Height="$(ICLEAR_CORNER_VGAP)" row="1" column="0" />
+  </Grid>
+</MarvinExternalFile>

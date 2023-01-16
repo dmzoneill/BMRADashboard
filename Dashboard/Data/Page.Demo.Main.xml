@@ -1,0 +1,12 @@
+<MarvinExternalFile>
+  <AliasList>
+    <Import>$(AppDir)/Aliases.xml</Import>
+    <DefaultAlias demo.Panel.H="785" />
+    <DefaultAlias demo.Panel.W="1510" />
+  </AliasList>
+  <Grid>
+    <Widget File="Image/ImageNoScale.xml" row="0" column="0" Width="$(demo.Panel.W)" Height="$(demo.Panel.H)" Align="NW">
+      <Source>$(AppDir)/Images/default.png</Source>
+    </Widget>
+  </Grid>
+</MarvinExternalFile>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MarvinExternalFile>
+  <AliasList>
+    <Import>$(AppDir)/Aliases.xml</Import>
+  </AliasList>
+  <Grid>
+    <Grid File="$(AppDir)/Grid.Demo.Title.Bar.xml" row="0" column="0" Position="Top" CapAlignment="S" Alignment="W" ICLEAR_HEIGHT="$(demo.Top.Header.H)" />
+    <DynamicGrid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Height="848">
+      <GridFile Source="$(AppDir)/Page.Demo.Main.xml" GridID="Main" ID="Main" />
+      <GridFile Source="$(AppDir)/Page.Demo.Expkit2.xml" GridID="A" ID="1" />
+      <GridFile Source="$(AppDir)/Page.Demo.Expkit3.xml" GridID="B" ID="2" />
+      <GridFile Source="$(AppDir)/Page.Demo.Expkit4.xml" GridID="C" ID="3" />
+      <GridFile Source="$(AppDir)/Page.Demo.Main.xml" GridID="D" ID="4" />
+      <GridFile Source="$(AppDir)/Page.Legal.xml" GridID="H" ID="8" />
+      <MinionSrc ID="Demo.PageID" Namespace="Menu" />
+      <Initial ID="Main" />
+    </DynamicGrid>
+  </Grid>
+</MarvinExternalFile>

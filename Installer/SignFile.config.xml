@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="no" ?>
+<configuration>
+	<appSettings>
+		<add key="VerboseMode" value="Moderate"/>
+		<!-- <add key="PgpPublicKeyFileName" value="intelswprod.public" /> -->
+		<add key="DefaultCertificateName" value="Intel Dashboard"/>
+		<add key="WebServiceURL" value="https://codesign-svc1.intel.com/main.asmx;https://codesign-svc.intel.com/certificateservice31/main.asmx;https://codesign-svc.intel.com/main.asmx"/>
+		<add key="WebServiceListUpdateFrequency" value="1"/>
+		<!-- <add key="UserName" value="" /> -->
+		<!-- <add key="Password" value="" /> -->
+		<!-- <add key="SslCertificateName" value="Intel Dashboard" /> -->
+		<add key="SoapRequestAttempts" value="3"/>
+		<add key="DelayBetweenRequestAttempts" value="30"/>
+		<add key="SoapRequestTimeout" value="180"/>
+		<add key="SkipSignedFiles" value="False"/>
+		<add key="WorkingThreads" value="Auto"/>
+		<add key="DisableTimestamping" value="False"/>
+		<!-- <add key="SupportBigEndian" value="True" /> -->
+		<!-- <add key="Description" value="" /> -->
+		<!-- <add key="DescriptionUrl" value="" /> -->
+		<!-- <add key="Identifier" value="" /> -->
+		<!-- <add key="OptionFlags" value="" /> -->
+		<!-- <add key="LocalBuffer" value="" /> -->
+		<!-- <add key="FileWithRequirements" value="" /> -->
+		<!-- <add key="Entitlements" value="" /> -->
+		<!-- <add key="PageSize" value="" /> -->
+		<!-- <add key="ApplicationRulesFileName" value="" /> -->
+		<!-- <add key="LogFileName" value="Log.txt"/> -->
+		<!-- <add key="UseAdditionalCertificate" value="True" /> -->
+		<add key="AlwaysSignKernelDriversWithAdditionalCertificate" value="True"/>
+		<add key="WebServiceListLastUpdate" value="2/7/2018 11:27"/>
+	</appSettings>
+</configuration>

@@ -1,0 +1,96 @@
+<MarvinExternalFile>
+  <AliasList>
+    <Alias Placeholder.Image="$(AppDir)/Images/placeholder.png"/>
+    <!-- Main Panel Definitions -->
+    <Alias Button.Text.Legal.Main.1="Legal" Button.Title.Legal.Main.1="Disclaimer" Button.State.Legal.Main.1="Show" Button.Data.Legal.1.1="Slide.Grid.A" />
+    <Alias Button.Text.Legal.Main.2="Support" Button.Title.Legal.Main.2="Support" Button.State.Legal.Main.2="Show" Button.Data.Legal.1.2="Slide.Grid.B" />
+    <Alias Button.Text.Legal.Main.3="" Button.Title.Legal.Main.3="" Button.State.Legal.Main.3="Hide" Button.Data.Legal.1.3="Slide.Grid.C" />
+    <Alias Button.Text.Legal.Main.4="" Button.Title.Legal.Main.4="" Button.State.Legal.Main.4="Hide" Button.Data.Legal.1.4="Slide.Grid.E" />
+    <Alias Button.Text.Legal.Main.5="" Button.Title.Legal.Main.5="" Button.State.Legal.Main.5="Hide" Button.Data.Legal.1.5="Slide.Grid.F" />
+    <Alias Button.Text.Legal.Main.6="" Button.Title.Legal.Main.6="" Button.State.Legal.Main.6="Hide" Button.Data.Legal.1.6="Slide.Grid.D" />
+    <Alias Button.Text.Legal.Main.7="" Button.Title.Legal.Main.7="" Button.State.Legal.Main.7="Hide" Button.Data.Legal.1.7="Slide.Grid.G" />
+    <Alias Button.Text.Legal.Main.8="" Button.Title.Legal.Main.8="" Button.State.Legal.Main.8="Hide" Button.Data.Legal.1.8="Slide.Grid.H" />
+    <Alias Slide.Main.Location="$(Slide.Dir)/NFVExperienceKit.png" />
+    <Alias Initial.ID.Main="Slide.Grid.Main" />
+    <!-- SubPanel A Definitions -->
+    <Alias Button.Title.Legal.Main.1.1="Disclaimer" Button.Text.Legal.1.1="Disclaimer" Button.State.Legal.1.1="Show" Button.1.Data.A="Slide.1" />
+    <Alias Button.Text.Legal.1.2="" Button.State.Legal.1.2="Hide" Button.2.Data.A="Slide.2" />
+    <Alias Button.Text.Legal.1.3="" Button.State.Legal.1.3="Hide" Button.3.Data.A="Slide.3" />
+    <Alias Button.Text.Legal.1.4="" Button.State.Legal.1.4="Hide" Button.4.Data.A="Slide.4" />
+    <Alias Button.Text.Legal.1.5="" Button.State.Legal.1.5="Hide" Button.5.Data.A="Slide.5" />
+    <Alias Button.Text.Legal.1.6="" Button.State.Legal.1.6="Hide" Button.6.Data.A="Slide.6" />
+    <Alias Button.Text.Legal.1.7="" Button.State.Legal.1.7="Hide" Button.7.Data.A="Slide.7" />
+    <Alias Button.Text.Legal.1.8="" Button.State.Legal.1.8="Hide" Button.8.Data.A="Slide.8" />
+    <Alias Initial.ID.A="Slide.1" />
+    <!-- SubPanel B Definitions -->
+    <Alias Button.Title.Legal.Main.2.1="Support" Button.Text.Legal.2.1="Support" Button.State.Legal.2.1="Show" Button.Data.Legal.2.1="Slide.1" />
+    <Alias Button.Text.Legal.2.2="" Button.State.Legal.2.2="Hide" Button.Data.Legal.2.2="Slide.2" />
+    <Alias Button.Text.Legal.2.3="" Button.State.Legal.2.3="Hide" Button.Data.Legal.2.3="Slide.3" />
+    <Alias Button.Text.Legal.2.4="" Button.State.Legal.2.4="Hide" Button.Data.Legal.2.4="Slide.4" />
+    <Alias Button.Text.Legal.2.5="" Button.State.Legal.2.5="Hide" Button.Data.Legal.2.5="Slide.5" />
+    <Alias Button.Text.Legal.2.6="" Button.State.Legal.2.6="Hide" Button.Data.Legal.2.6="Slide.6" />
+    <Alias Button.Text.Legal.2.7="" Button.State.Legal.2.7="Hide" Button.Data.Legal.2.7="Slide.7" />
+    <Alias Button.Text.Legal.2.8="" Button.State.Legal.2.8="Hide" Button.Data.Legal.2.8="Slide.8" />
+    <Alias Initial.ID.B="Slide.1" />
+    <!-- SubPanel C Definitions -->
+    <Alias Button.Text.Legal.3.1="" Button.State.Legal.3.1="Hide" Button.Data.Legal.3.1="Slide.1" />
+    <Alias Button.Text.Legal.3.2="" Button.State.Legal.3.2="Hide" Button.Data.Legal.3.2="Slide.2" />
+    <Alias Button.Text.Legal.3.3="" Button.State.Legal.3.3="Hide" Button.Data.Legal.3.3="Slide.3" />
+    <Alias Button.Text.Legal.3.4="" Button.State.Legal.3.4="Hide" Button.Data.Legal.3.4="Slide.4" />
+    <Alias Button.Text.Legal.3.5="" Button.State.Legal.3.5="Hide" Button.Data.Legal.3.5="Slide.5" />
+    <Alias Button.Text.Legal.3.6="" Button.State.Legal.3.6="Hide" Button.Data.Legal.3.6="Slide.6" />
+    <Alias Button.Text.Legal.3.7="" Button.State.Legal.3.7="Hide" Button.Data.Legal.3.7="Slide.7" />
+    <Alias Button.Text.Legal.3.8="" Button.State.Legal.3.8="Hide" Button.Data.Legal.3.8="Slide.8" />
+    <Alias Initial.ID.C="Slide.1" />
+    <!-- SubPanel D Definitions -->
+    <Alias Button.Text.Legal.4.1="" Button.State.Legal.4.1="Hide" Button.Data.Legal.4.1="Slide.1"/>
+    <Alias Button.Text.Legal.4.2="" Button.State.Legal.4.2="Hide" Button.Data.Legal.4.2="Slide.2"/>
+    <Alias Button.Text.Legal.4.3="" Button.State.Legal.4.3="Hide" Button.Data.Legal.4.3="Slide.3"/>
+    <Alias Button.Text.Legal.4.4="" Button.State.Legal.4.4="Hide" Button.Data.Legal.4.4="Slide.4"/>
+    <Alias Button.Text.Legal.4.5="" Button.State.Legal.4.5="Hide" Button.Data.Legal.4.5="Slide.5"/>
+    <Alias Button.Text.Legal.4.6="" Button.State.Legal.4.6="Hide" Button.Data.Legal.4.6="Slide.6"/>
+    <Alias Button.Text.Legal.4.7="" Button.State.Legal.4.7="Hide" Button.Data.Legal.4.7="Slide.7"/>
+    <Alias Button.Text.Legal.4.8="" Button.State.Legal.4.8="Hide" Button.Data.Legal.4.8="Slide.8"/>
+    <Alias Initial.ID.D="Slide.1" />
+    <!-- SubPanel E Definitions -->
+    <Alias Button.Text.Legal.5.1="" Button.State.Legal.5.1="Hide" Button.Data.Legal.5.1="Slide.1"/>
+    <Alias Button.Text.Legal.5.2="" Button.State.Legal.5.2="Hide" Button.Data.Legal.5.2="Slide.2"/>
+    <Alias Button.Text.Legal.5.3="" Button.State.Legal.5.3="Hide" Button.Data.Legal.5.3="Slide.3" />
+    <Alias Button.Text.Legal.5.4="" Button.State.Legal.5.4="Hide" Button.Data.Legal.5.4="Slide.4" />
+    <Alias Button.Text.Legal.5.5="" Button.State.Legal.5.5="Hide" Button.Data.Legal.5.5="Slide.5" />
+    <Alias Button.Text.Legal.5.6="" Button.State.Legal.5.6="Hide" Button.Data.Legal.5.6="Slide.6" />
+    <Alias Button.Text.Legal.5.7="" Button.State.Legal.5.7="Hide" Button.Data.Legal.5.7="Slide.7" />
+    <Alias Button.Text.Legal.5.8="" Button.State.Legal.5.8="Hide" Button.Data.Legal.5.8="Slide.8" />
+    <Alias Initial.ID.E="Slide.1" />
+    <!-- SubPanel F Definitions -->
+    <Alias Button.Text.Legal.6.1="" Button.State.Legal.6.1="Hide" Button.Data.Legal.6.1="Slide.1" />
+    <Alias Button.Text.Legal.6.2="" Button.State.Legal.6.2="Hide" Button.Data.Legal.6.2="Slide.2" />
+    <Alias Button.Text.Legal.6.3="" Button.State.Legal.6.3="Hide" Button.Data.Legal.6.3="Slide.3" />
+    <Alias Button.Text.Legal.6.4="" Button.State.Legal.6.4="Hide" Button.Data.Legal.6.4="Slide.4" />
+    <Alias Button.Text.Legal.6.5="" Button.State.Legal.6.5="Hide" Button.Data.Legal.6.5="Slide.5" />
+    <Alias Button.Text.Legal.6.6="" Button.State.Legal.6.6="Hide" Button.Data.Legal.6.6="Slide.6" />
+    <Alias Button.Text.Legal.6.7="" Button.State.Legal.6.7="Hide" Button.Data.Legal.6.7="Slide.7" />
+    <Alias Button.Text.Legal.6.8="" Button.State.Legal.6.8="Hide" Button.Data.Legal.6.8="Slide.8" />
+    <Alias Initial.ID.F="Slide.1" />
+    <!-- SubPanel G Definitions -->
+    <Alias Button.Text.Legal.7.1="" Button.State.Legal.7.1="Hide" Button.Data.Legal.7.1="Slide.1" />
+    <Alias Button.Text.Legal.7.2="" Button.State.Legal.7.2="Hide" Button.Data.Legal.7.2="Slide.2" />
+    <Alias Button.Text.Legal.7.3="" Button.State.Legal.7.3="Hide" Button.Data.Legal.7.3="Slide.3" />
+    <Alias Button.Text.Legal.7.4="" Button.State.Legal.7.4="Hide" Button.Data.Legal.7.4="Slide.4" />
+    <Alias Button.Text.Legal.7.5="" Button.State.Legal.7.5="Hide" Button.Data.Legal.7.5="Slide.5" />
+    <Alias Button.Text.Legal.7.6="" Button.State.Legal.7.6="Hide" Button.Data.Legal.7.6="Slide.6" />
+    <Alias Button.Text.Legal.7.7="" Button.State.Legal.7.7="Hide" Button.Data.Legal.7.7="Slide.7" />
+    <Alias Button.Text.Legal.7.8="" Button.State.Legal.7.8="Hide" Button.Data.Legal.7.8="Slide.8" />
+    <Alias Initial.ID.G="Slide.1" />
+    <!-- SubPanel G Definitions -->
+    <Alias Button.Text.Legal.8.1="" Button.State.Legal.8.1="Hide" Button.Data.Legal.8.1="Slide.1" />
+    <Alias Button.Text.Legal.8.2="" Button.State.Legal.8.2="Hide" Button.Data.Legal.8.2="Slide.2" />
+    <Alias Button.Text.Legal.8.3="" Button.State.Legal.8.3="Hide" Button.Data.Legal.8.3="Slide.3" />
+    <Alias Button.Text.Legal.8.4="" Button.State.Legal.8.4="Hide" Button.Data.Legal.8.4="Slide.4" />
+    <Alias Button.Text.Legal.8.5="" Button.State.Legal.8.5="Hide" Button.Data.Legal.8.5="Slide.5" />
+    <Alias Button.Text.Legal.8.6="" Button.State.Legal.8.6="Hide" Button.Data.Legal.8.6="Slide.6" />
+    <Alias Button.Text.Legal.8.7="" Button.State.Legal.8.7="Hide" Button.Data.Legal.8.7="Slide.7" />
+    <Alias Button.Text.Legal.8.8="" Button.State.Legal.8.8="Hide" Button.Data.Legal.8.8="Slide.8" />
+    <Alias Initial.ID.H="Slide.1" />
+  </AliasList>
+</MarvinExternalFile>

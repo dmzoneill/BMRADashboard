@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+##############################################################################
+#  Copyright (c) 2016 by Patrick Kutch https://github.com/PatrickKutch
+# 
+# Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+# 
+#      http://www.apache.org/licenses/LICENSE-2.0
+# 
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+##############################################################################
+#    File Abstract: 
+#    Right CAP
+#
+##############################################################################
+-->
+<MarvinExternalFile>
+  <AliasList>
+    <Import>Widget\ICLEAR\ICLEAR.xml</Import>
+    <DefaultAlias ICLEAR_WIDTH="$(DEFAULT_BUTTON_WIDTH)" />
+    <DefaultAlias ICLEAR_HEIGHT="$(DEFAULT_BUTTON_HEIGHT)" />
+    <DefaultAlias ICLEAR_TEXT="" />
+    <DefaultAlias ICLEAR_TEXT_LOC="Center" />
+  </AliasList>
+  <Grid hgap="0" vgap="0" align="Center">
+    <PaddingOverride top="$(TOP_PAD)" bottom="$(BOTTOM_PAD)" right="$(RIGHT_PAD)" left="$(LEFT_PAD)" />
+    <StyleOverride>
+      <Item>-fx-background-color: transparent</Item>
+    </StyleOverride>
+    <Widget File="ICLEAR/ICLEARWidget.xml" row="0" column="0" Width="$(ICLEAR_WIDTH)" Height="$(ICLEAR_HEIGHT)" Align="$(ICLEAR_TEXT_LOC)" Task="$(ICLEAR_TASK)">
+      <InitialValue>$(ICLEAR_TEXT)</InitialValue>
+      <MinionSrc Namespace="$(ICLEAR_NAMESPACE)" ID="$(ICLEAR_ID)" />
+      <Peekaboo Namespace="$(ICLEAR_PEEKABOO_NAMESPACE)" ID="$(ICLEAR_PEEKABOO_ID)" />
+      <Shape>M 0,-20  l 50,0 c 10,0 10,20 0,20 l -50,0 </Shape>
+      <StyleOverride ID="$(ICLEAR_HOVER)">
+        <Item>-svg-main-color:$(ICLEAR_COLOR)</Item>
+        <Item>
+          -fx-font-size:$(ICLEAR_TEXT_SIZE);
+          -fx-text-fill:$(ICLEAR_TEXT_COLOR);
+          -fx-font-family:$(ICLEAR_TEXT_FONT);
+        </Item>
+        <Item>$(ICLEAR_CUSTOM_STYLE)</Item>
+      </StyleOverride>
+    </Widget>
+  </Grid>
+</MarvinExternalFile>

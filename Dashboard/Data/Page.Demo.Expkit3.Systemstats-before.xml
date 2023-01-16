@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MarvinExternalFile>
+  <AliasList>
+    <Import>$(AppDir)/Aliases.xml</Import>
+    <Import>$(AppDir)/Demos/expkit3/Definitions/expkit3.xml</Import>
+  </AliasList>
+  <Grid Width="$(demo.statspanel.width)" vgap="10" Align="S">
+    <StyleOverride>
+      <Item>-fx-background-color: $(demo.container.background);</Item>
+    </StyleOverride>
+    <!-- Stats -->
+    <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" vgap="10" hgap="10" Align="Center">
+      <Grid row="$(CurrentRowAlias)" column="$(CurrentColumnAlias)" hgap="10">
+        <Widget File="$(CustomDir)/GaugeBarPacketRate.xml" row="$(NextRowAlias)" column="$(NextColumnAlias)" Width="$(demo.gauge.width)" Height="$(demo.gauge.height)">
+          <StyleOverride File="$(CustomDir)/GaugeBarPacketRate-before.css"/>
+          <Title>Packet rate</Title>
+          <MinionSrc ID="$(minion.source.1)" Namespace="$(SUT.NS.$(NS_ID).$(multus.state))" />
+        </Widget>
+        <Widget File="$(CustomDir)/GaugeBarThroughput.xml" row="$(CurrentRowAlias)" column="$(NextColumnAlias)" Width="$(demo.gauge.width)" Height="$(demo.gauge.height)">
+          <StyleOverride File="$(CustomDir)/GaugeBarThroughput-before.css"/>
+          <Title>Throughput</Title>
+          <MinionSrc ID="$(minion.source.2)" Namespace="$(SUT.NS.$(NS_ID).$(multus.state))" />
+        </Widget>
+      </Grid>
+      <Grid row="$(CurrentRowAlias)" column="$(NextColumnAlias)" Align="Center">
+        <Grid row="0" column="0" vgap="20" Align="Center">
+          <Widget File="$(CustomDir)/LCD.$(multus.state).xml" row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Width="$(demo.lcd.width)" Height="$(demo.lcd.height)" Align="Center">
+            <MinionSrc ID="$(minion.source.3)" Namespace="$(SUT.NS.$(NS_ID).$(multus.state))" />
+            <UnitsOverride>%</UnitsOverride>
+            <Title>CPU usage</Title>
+          </Widget>
+          <Widget File="$(CustomDir)/LCD.$(multus.state).xml" row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Width="$(demo.lcd.width)" Height="$(demo.lcd.height)" Align="Center">
+            <MinionSrc ID="$(minion.source.4)" Namespace="$(SUT.NS.$(NS_ID).$(multus.state))" />
+            <UnitsOverride>%</UnitsOverride>
+            <Title>Packet loss</Title>
+          </Widget>
+        </Grid>
+      </Grid>
+    </Grid>
+    <!-- Spacer below the gauges -->
+    <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)">
+      <Widget File="Spacer.xml" row="0" column="0" Width="1" Height="20">
+        <StyleOverride>
+          <Item>-fx-background-color: transparent;</Item>
+        </StyleOverride>
+      </Widget>
+    </Grid>
+  </Grid>
+</MarvinExternalFile>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MarvinExternalFile>
+  <AliasList>
+    <Import>$(AppDir)/Aliases.xml</Import>
+    <Import>$(AppDir)/Menu.Demo.Area.xml</Import>
+    <Import>$(AppDir)/Menu.Info.Area.xml</Import>
+    <Import>$(AppDir)/Menu.Legal.Area.xml</Import>
+  </AliasList>
+  <Tab>
+    <Title></Title>
+    <!-- Background image -->
+    <Grid row="0" column="0" Align="NW">
+      <Widget File="Image/ImageScale.xml" row="0" column="0" Width="1920" Height="1050">
+        <Source>$(AppDir)/Images/background-transparent.jpg</Source>
+      </Widget>
+    </Grid>
+    <Grid row="0" column="0" hgap="5" vgap="0" Width="$(Dashboard.Tab.W)" Height="$(Dashboard.Tab.H)" Align="N">
+      <StyleOverride>
+        <Item>
+          -fx-padding: 20 0 0 0;
+        </Item>
+      </StyleOverride>
+      <Grid File="$(AppDir)/Menu.xml" row="0" column="0" Width="$(Dashboard.V.Grid.W)" Align="N"/>
+      <DynamicGrid row="0" column="1" Width="$(Dashboard.Grid.W)" Height="$(Dashboard.Grid.H)" rowspan="1" hgap="0" vgap="0" Align="N">
+        <GridFile Source="$(AppDir)/Info.xml" ID="Info" />
+        <GridFile Source="$(AppDir)/Demo.xml" ID="Demo" />
+        <GridFile Source="$(AppDir)/Legal.xml" ID="Legal" />
+        <MinionSrc ID="Area" Namespace="Menu" />
+        <Initial ID="Info" />
+      </DynamicGrid>
+    </Grid>
+  </Tab>
+</MarvinExternalFile>

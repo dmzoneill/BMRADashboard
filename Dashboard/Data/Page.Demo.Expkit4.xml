@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MarvinExternalFile>
+  <AliasList>
+    <Import>$(AppDir)/Aliases.xml</Import>
+    <Import>$(AppDir)/Demos/expkit5a/Definitions/expkit5.xml</Import>
+  </AliasList>
+  <Grid>
+    <Grid row="$(CurrentRowAlias)" column="$(CurrentRowAlias)">
+      <!-- 1 row 1 column -->
+      <Grid row="$(CurrentRowAlias)" column="$(NextColumnAlias)" Width="$(demo.grid.width)" Height="$(demo.grid.height)">
+        <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Align="Center" vgap="10">
+          <!-- video -->
+          <DynamicGrid row="$(NextRowAlias)" column="$(CurrentColumnAlias)">
+            <GridFile Source="$(AppDir)/Page.Demo.Expkit4-demo.xml" ID="1" />
+            <!--<GridFile Source="$(AppDir)/Page.Demo.Expkit4-video.xml" ID="2" /> //-->
+            <Initial ID="1"/>
+            <MinionSrc ID="Expkit4Grid" Namespace="Expkit4Grid"/>
+          </DynamicGrid>  
+        </Grid>
+      </Grid>
+    </Grid>
+  </Grid>
+</MarvinExternalFile>
