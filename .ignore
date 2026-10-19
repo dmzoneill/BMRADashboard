@@ -1,0 +1,14 @@
+# Vendored Tcl 8.6 standard library shipped inside Oscar (Python 3.4 embed, tcl86t.dll).
+Dashboard/Player/tcl/
+
+# Vendored Tk 8.6 library and widget demos shipped inside Oscar (tk86t.dll). Copyright Regents of the University of California, Sun Microsystems, and Scriptics.
+Dashboard/Player/tk/
+
+# Vendored BIFF widget pack by Patrick Kutch (Apache-2.0, https://github.com/PatrickKutch), including Enzo/Medusa JavaFX skins by Gerrit Grunwald (Apache-2.0) and the Oracle JavaFX Modena theme (GPL-2.0 with Classpath exception) in Modena-BIFF.css.
+Dashboard/Widget/
+
+# Generated lab-recorded demo playback skins and definitions. README: the demo data was recorded in the lab and is replayed.
+Dashboard/Data/Demos/
+
+# Source media (pptx, mp4, images) used to produce the generated demo assets under Dashboard/Data/Demos.
+Sources/Data/Demos/

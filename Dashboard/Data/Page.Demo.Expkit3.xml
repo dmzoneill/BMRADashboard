@@ -24,24 +24,8 @@
           </Item>
         </StyleOverride>
         <!-- Kubernetes pod header -->
-        <Grid row="$(CurrentRowAlias)" column="$(CurrentColumnAlias)" Width="$(demo.pod.grid.width)" Align="N">
-          <StyleOverride>
-            <Item>
-              -fx-background-color: $(blue);
-              -fx-border-radius: 10 10 0 0;
-              -fx-background-radius: 10 10 0 0;
-            </Item>
-          </StyleOverride>
-          <Widget File="Text/Text.xml" row="$(CurrentRowAlias)" column="$(CurrentColumnAlias)">
-            <InitialValue>Multi-network Kubernetes pods with Multus CNI</InitialValue>
-            <StyleOverride>
-              <Item>
-                -fx-background-color: $(blue);
-                -fx-border-radius: 10 10 0 0;
-                -fx-background-radius: 10 10 0 0;
-              </Item>
-            </StyleOverride>
-          </Widget>
+<Grid row="$(CurrentRowAlias)" column="$(CurrentColumnAlias)" Width="$(demo.pod.grid.width)" Align="N"> <StyleOverride> <Item> -fx-background-color: $(blue); -fx-border-radius: 10 10 0 0; -fx-background-radius: 10 10 0 0; </Item> </StyleOverride> <Widget File="Text/Text.xml" row="$(CurrentRowAlias)" column="$(CurrentColumnAlias)">
+<InitialValue>Multi-network Kubernetes pods with Multus CNI</InitialValue> <StyleOverride> <Item> -fx-background-color: $(blue); -fx-border-radius: 10 10 0 0; -fx-background-radius: 10 10 0 0; </Item> </StyleOverride> </Widget>
         </Grid>
         <!-- System stats -->
         <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Width="$(demo.pod.grid.width)">
@@ -52,7 +36,7 @@
                 <Source>$(AppDir)/Demos/expkit3/Images/topology_1.png</Source>
               </Widget>
             </Grid>
-            <!-- Guages -->
+            <!-- Gauges -->
             <Grid Width="$(demo.pod.grid.width)" row="$(NextRowAlias)" column="$(CurrentColumnAlias)">
               <!-- DPDK container -->
               <Grid File="$(AppDir)/Page.Demo.Expkit3.Systemstats-before.xml" NS_ID="2" row="1" column="1" Width="$(demo.statspanel.width)" />
@@ -64,16 +48,7 @@
       </Grid>
     </Grid>
     <!-- tagline -->
-    <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Width="1510" Height="120">
-      <StyleOverride>
-        <Item>
-          -fx-background-color: $(demo.panel.title.background);
-          -fx-border-radius: 10 10 10 10;
-          -fx-background-radius: 10 10 10 10;
-          -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0);
-        </Item>
-      </StyleOverride>
-      <Widget File="Image/ImageScale.xml" row="$(NextRowAlias)" column="$(NextColumnAlias)" Width="$(demo.pod.topology.width)">
+<Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Width="1510" Height="120"> <StyleOverride> <Item> -fx-background-color: $(demo.panel.title.background); -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0); </Item> </StyleOverride> <Widget File="Image/ImageScale.xml" row="$(NextRowAlias)" column="$(NextColumnAlias)" Width="$(demo.pod.topology.width)">
         <Source>$(AppDir)/Demos/expkit3/Images/benefits.png</Source>
       </Widget>
     </Grid>

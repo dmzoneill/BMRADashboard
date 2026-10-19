@@ -2,17 +2,7 @@
 <MarvinExternalFile>
   <AliasList>
     <Import>$(AppDir)/Aliases.xml</Import>
-    <Import>$(AppDir)/Demos/expkit5b/Definitions/expkit5.xml</Import>
-  </AliasList>
-  <Grid>
-    <Grid row="$(CurrentRowAlias)" column="$(CurrentRowAlias)">
-      <!-- 1 row 1 column -->
-      <Grid row="$(CurrentRowAlias)" column="$(NextColumnAlias)" Width="$(demo.grid.width)" Height="$(demo.grid.height)">
-        <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Align="Center" vgap="10">
-          <!-- video -->
-          <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)">
-            <Widget File="Media/VideoPlayer.xml" row="0" column="0" Height="720">
-              <Video Source="$(AppDir)/Demos/expkit5b/video.mp4" ID="Video_1" />
+<Import>$(AppDir)/Demos/expkit5b/Definitions/expkit5.xml</Import> </AliasList> <Grid> <Grid row="$(CurrentRowAlias)" column="$(CurrentRowAlias)"> <!-- 1 row 1 column --> <Grid row="$(CurrentRowAlias)" column="$(NextColumnAlias)" Width="$(demo.grid.width)" Height="$(demo.grid.height)"> <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Align="Center" vgap="10"> <!-- video --> <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)"> <Widget File="Media/VideoPlayer.xml" row="0" column="0" Height="720"> <Video Source="$(AppDir)/Demos/expkit5b/video.mp4" ID="Video_1" />
               <AutoStart>False</AutoStart>
               <Repeat Mode="Single">False</Repeat>
               <PlaybackControl ID="PlaybackControl" Namespace="Expkit5B.Video" />
