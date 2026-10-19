@@ -36,7 +36,7 @@
                 <Source>$(AppDir)/Demos/expkit3/Images/topology_1.png</Source>
               </Widget>
             </Grid>
-            <!-- Guages -->
+            <!-- Gauges -->
             <Grid Width="$(demo.pod.grid.width)" row="$(NextRowAlias)" column="$(CurrentColumnAlias)">
               <!-- DPDK container -->
               <Grid File="$(AppDir)/Page.Demo.Expkit3.Systemstats-before.xml" NS_ID="2" row="1" column="1" Width="$(demo.statspanel.width)" />
