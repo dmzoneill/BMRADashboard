@@ -71,5 +71,24 @@
     <DefaultAlias ICLEAR_HEIGHT="25" />
     <DefaultAlias ICLEAR_HOVER="True" />
     <DefaultAlias Menu.Width="280"/>
+    <!-- Shared dashboard skins. Callers keep only the values that differ. -->
+    <DefaultAlias Title.Bar.Grid.Blue="-fx-wrap-text:true; -fx-background-color: linear-gradient(from 0% 20% to 0% 100%, $(blue), derive($(blue), -20%)); -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10;" />
+    <DefaultAlias Title.Bar.Grid.Green="-fx-wrap-text:true; -fx-background-color: linear-gradient(from 0% 20% to 0% 100%, $(green), derive($(green), -20%)); -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10;" />
+    <DefaultAlias Title.Bar.Grid.Orange="-fx-wrap-text:true; -fx-background-color: linear-gradient(from 0% 20% to 0% 100%, $(orange), derive($(orange), -20%)); -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10;" />
+    <DefaultAlias Title.Bar.Label.Blue="-fx-font-family:$(Menu.Title.Text.Font); -fx-font-size: 16pt; -fx-text-fill: $(white); -fx-wrap-text:true; -fx-background-color: linear-gradient(from 0% 20% to 0% 100%, $(blue), derive($(blue), -20%)); -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10; -fx-padding: 0 15 0 15;" />
+    <DefaultAlias Title.Bar.Label.Green="-fx-font-family:$(Menu.Title.Text.Font); -fx-font-size: 16pt; -fx-text-fill: $(white); -fx-wrap-text:true; -fx-background-color: linear-gradient(from 0% 20% to 0% 100%, $(green), derive($(green), -20%)); -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10; -fx-padding: 0 15 0 15;" />
+    <DefaultAlias Title.Bar.Label.Orange="-fx-font-family:$(Menu.Title.Text.Font); -fx-font-size: 16pt; -fx-text-fill: $(white); -fx-wrap-text:true; -fx-background-color: linear-gradient(from 0% 20% to 0% 100%, $(orange), derive($(orange), -20%)); -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10; -fx-padding: 0 15 0 15;" />
+    <DefaultAlias Title.Bar.Chevron="-fx-font-family: $(Menu.Title.Text.Font); -fx-font-size: 16pt; -fx-text-fill: $(white); -fx-wrap-text: true; -fx-background-color: transparent;" />
+    <DefaultAlias Demo.Header.Before="-fx-background-color: $(darkorange-gradient); -fx-border-radius: 10 10 0 0; -fx-background-radius: 10 10 0 0;" />
+    <DefaultAlias Demo.Header.After="-fx-background-color: $(darkgreen-gradient); -fx-border-radius: 10 10 0 0; -fx-background-radius: 10 10 0 0;" />
+    <DefaultAlias Demo.Panel.Shadow="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0);" />
+    <DefaultAlias Demo.Panel.Fill="-fx-background-color: $(demo.panel.background);" />
+    <DefaultAlias Demo.Title.Font="-fx-font-family: $(demo.grid.font);" />
+    <DefaultAlias Menu.Panel.Orange="-fx-background-color: $(blue-80); -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10; -fx-border-color: $(orange); -fx-border-width: 3;" />
+    <DefaultAlias Menu.Panel.Green="-fx-background-color: $(blue-80); -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10; -fx-border-color: $(green); -fx-border-width: 3;" />
+    <DefaultAlias Menu.Panel.Blue="-fx-background-color: $(blue-80); -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10; -fx-border-color: $(blue); -fx-border-width: 3;" />
+    <DefaultAlias Menu.Heading.Style="-fx-font-family:$(Menu.Title.Text.Font); -fx-font-size: $(Menu.Title.Text.Size); -fx-text-fill: $(white);" />
+    <DefaultAlias Menu.Heading.Wrap="-fx-font-family:$(Menu.Title.Text.Font); -fx-font-size: $(Menu.Title.Text.Size); -fx-text-fill: $(white); -fx-wrap-text:true;" />
+    <DefaultAlias Spacer.Clear="-fx-background-color: transparent;" />
   </AliasList>
 </MarvinExternalFile>

@@ -1,18 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<MarvinExternalFile>
-  <AliasList>
-    <Import>$(AppDir)/Aliases.xml</Import>
-    <Import>$(AppDir)/Demos/expkit5a/Definitions/expkit5.xml</Import>
-  </AliasList>
-  <Grid>
-    <Grid row="$(CurrentRowAlias)" column="$(CurrentRowAlias)">
-      <!-- 1 row 1 column -->
-      <Grid row="$(CurrentRowAlias)" column="$(NextColumnAlias)" Width="$(demo.grid.width)" Height="$(demo.grid.height)">
-        <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Align="Center" vgap="10">
-          <!-- video -->
-          <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)">
-            <Widget File="Media/VideoPlayer.xml" row="0" column="0" Height="720">
-              <Video Source="$(AppDir)/Demos/expkit5a/video.mp4" ID="Video_1" />
+<?xml version="1.0" encoding="UTF-8"?> <MarvinExternalFile> <AliasList> <Import>$(AppDir)/Aliases.xml</Import> <Import>$(AppDir)/Demos/expkit5a/Definitions/expkit5.xml</Import> </AliasList> <Grid> <Grid row="$(CurrentRowAlias)" column="$(CurrentRowAlias)"> <!-- 1 row 1 column --> <Grid row="$(CurrentRowAlias)" column="$(NextColumnAlias)" Width="$(demo.grid.width)" Height="$(demo.grid.height)"> <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)" Align="Center" vgap="10"> <!-- video --> <Grid row="$(NextRowAlias)" column="$(CurrentColumnAlias)"> <Widget File="Media/VideoPlayer.xml" row="0" column="0" Height="720"> <Video Source="$(AppDir)/Demos/expkit5a/video.mp4" ID="Video_1" />
               <AutoStart>False</AutoStart>
               <Repeat Mode="Single">False</Repeat>
               <PlaybackControl ID="PlaybackControl" Namespace="Expkit5A.Video" />
@@ -29,16 +15,7 @@
             <Widget File="Button/Button.xml" row="1" column="2" Task="VideoPlayer5aStopPlayBack" Width="150" Height="24">
               <Title>Stop</Title>
             </Widget>
-            <Widget File="Button/Button.xml" row="1" column="3" Task="VideoPlayer5aExternal" Width="150" Height="24">
-              <Title>External Player</Title>
-            </Widget>
-          </Grid>
-        </Grid>
-      </Grid>
-    </Grid>
-  </Grid>
-  <!-- expkit 5a video -->
-  <TaskList ID="VideoPlayer5aPlayBack">
+<Widget File="Button/Button.xml" row="1" column="3" Task="VideoPlayer5aExternal" Width="150" Height="24"> <Title>External Player</Title> </Widget> </Grid> </Grid> </Grid> </Grid> </Grid> <!-- expkit 5a video --> <TaskList ID="VideoPlayer5aPlayBack">
     <TaskItem Type="Marvin">
       <DataToInsert ID="PlaybackControl" Namespace="Expkit5A.Video" Data="Play" />
     </TaskItem>

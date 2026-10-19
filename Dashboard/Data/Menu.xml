@@ -49,30 +49,14 @@
    </AliasList>
   <Grid vgap="15" Align="Center">
     <Widget File="Spacer.xml" row="0" column="0" Width="20" Height="1">
-      <StyleOverride>
-        <Item>-fx-background-color: transparent;</Item>
-      </StyleOverride>
+      <StyleOverride><Item>$(Spacer.Clear)</Item></StyleOverride>
     </Widget>
     <!-- Information area -->
     <Grid row="0" column="1" Width="$(Menu.Width)" Height="390">
-      <StyleOverride>
-        <Item>
-          -fx-background-color: $(blue-80);
-          -fx-border-radius: 10 10 10 10;
-          -fx-background-radius: 10 10 10 10;
-          -fx-border-color: $(orange);
-          -fx-border-width: 3;
-        </Item>
-      </StyleOverride>
+      <StyleOverride><Item>$(Menu.Panel.Orange)</Item></StyleOverride>
       <Widget File="Text/Text.xml" row="0" column="0" Align="N">
         <InitialValue>Information Area</InitialValue>
-        <StyleOverride>
-          <Item>
-            -fx-font-family:$(Menu.Title.Text.Font);
-            -fx-font-size: 	$(Menu.Title.Text.Size);
-            -fx-text-fill: 	$(white);
-          </Item>
-        </StyleOverride>
+        <StyleOverride><Item>$(Menu.Heading.Style)</Item></StyleOverride>
       </Widget>
       <DynamicGrid row="1" column="0" Width="$(Menu.Width)" Height="390" Align="N" >
         <GridFile Source="$(AppDir)/Menu.Buttons.xml" ID="Main" Area="Info" PageID="Main" ButtonsCount="8">
@@ -89,25 +73,10 @@
     </Grid>
     <!-- Demo area -->
     <Grid row="1" column="1" Width="$(Menu.Width)" Height="330">
-      <StyleOverride>
-        <Item>
-          -fx-background-color: $(blue-80);
-          -fx-border-radius: 10 10 10 10;
-          -fx-background-radius: 10 10 10 10;
-          -fx-border-color: $(green);
-          -fx-border-width: 3;
-        </Item>
-      </StyleOverride>
+      <StyleOverride><Item>$(Menu.Panel.Green)</Item></StyleOverride>
       <Widget File="Text/Text.xml" row="0" column="0" Align="N">
         <InitialValue>Demo Area</InitialValue>
-        <StyleOverride>
-          <Item>
-            -fx-font-family:$(Menu.Title.Text.Font);
-            -fx-font-size: 	$(Menu.Title.Text.Size);
-            -fx-text-fill: 	$(white);
-            -fx-wrap-text:true;
-          </Item>
-        </StyleOverride>
+        <StyleOverride><Item>$(Menu.Heading.Wrap)</Item></StyleOverride>
       </Widget>
       <DynamicGrid row="1" column="0" Width="$(Menu.Width)" Height="330" Align="N">
         <GridFile Source="$(AppDir)/Menu.Buttons.xml" ID="Main" Area="Demo" PageID="Main" ButtonsCount="8">
@@ -124,15 +93,7 @@
     </Grid>
     <!-- Legal area -->
     <Grid row="2" column="1" Width="$(Menu.Width)" Height="130">
-      <StyleOverride>
-        <Item>
-          -fx-background-color: $(blue-80);
-          -fx-border-radius: 10 10 10 10;
-          -fx-background-radius: 10 10 10 10;
-          -fx-border-color: $(blue);
-          -fx-border-width: 3;
-        </Item>
-      </StyleOverride>
+      <StyleOverride><Item>$(Menu.Panel.Blue)</Item></StyleOverride>
       <DynamicGrid row="1" column="0" Width="$(Menu.Width)" Height="130" Align="S">
         <GridFile Source="$(AppDir)/Menu.Buttons.xml" ID="Main" Area="Legal" PageID="Main" ButtonsCount="8">
           <Transition Delay="100" Duration="500">CUBE</Transition>
@@ -165,16 +126,7 @@
       <DataToInsert ID="Info.Slide" Namespace="Menu" Data="Default" />
     </TaskItem>
     <TaskItem Type="Marvin">
-      <DataToInsert ID="Area" Namespace="Menu" Data="Info" />
-    </TaskItem>
-    <TaskItem Type="Marvin">
-      <DataToInsert ID="TitleVisibility" Namespace="Page" Data="Hide" />
-    </TaskItem>
-  </TaskList>
-
-  <!-- Main -->
-  <For Count="8" StartValue="1">
-    <TaskList ID="Button.Task.Info.Main.$(currentvaluealias)">
+<DataToInsert ID="Area" Namespace="Menu" Data="Info" /> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert ID="TitleVisibility" Namespace="Page" Data="Hide" /> </TaskItem> </TaskList> <!-- Main --> <For Count="8" StartValue="1"> <TaskList ID="Button.Task.Info.Main.$(currentvaluealias)">
       <TaskItem Type="OtherTask" ID="ResetButtons" />
       <TaskItem Type="Marvin">
         <DataToInsert ID="Info.PageID" Namespace="Menu" Data="$(currentvaluealias)" />
@@ -186,16 +138,7 @@
         <DataToInsert ID="Title" Namespace="Info" Data="$(Button.Text.Info.Main.$(currentvaluealias))" />
       </TaskItem>
       <TaskItem Type="Marvin" Postpone="1">
-        <DataToInsert ID="Info.$(currentvaluealias).$(INFO.SUBMENU_$(currentvaluealias)_DEFAULT)" Namespace="Button.Peekaboo" Data="Select"/>
-      </TaskItem>
-      <TaskItem Type="Marvin">
-        <DataToInsert ID="TitleVisibility" Namespace="Page" Data="Show" />
-      </TaskItem>
-      <TaskItem Type="Marvin">
-        <DataToInsert ID="SubpageTitleVisibility" Namespace="Info" Data="Show" />
-      </TaskItem>
-      <TaskItem Type="Marvin">
-        <DataToInsert ID="Info.Slide" Namespace="Menu" Data="$(INFO.SUBMENU_$(currentvaluealias)_DEFAULT)" />
+<DataToInsert ID="Info.$(currentvaluealias).$(INFO.SUBMENU_$(currentvaluealias)_DEFAULT)" Namespace="Button.Peekaboo" Data="Select"/> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert ID="TitleVisibility" Namespace="Page" Data="Show" /> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert ID="SubpageTitleVisibility" Namespace="Info" Data="Show" /> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert ID="Info.Slide" Namespace="Menu" Data="$(INFO.SUBMENU_$(currentvaluealias)_DEFAULT)" />
       </TaskItem>
       <TaskItem Type="Marvin">
         <DataToInsert ID="Area" Namespace="Menu" Data="Info" />
@@ -215,16 +158,7 @@
           <DataToInsert ID="SubpageTitle" Namespace="Page" Data="$(Button.Title.Info.Main.$(outervaluealias).$(currentvaluealias))" />
         </TaskItem>
         <TaskItem Type="Marvin" Postpone="1">
-          <DataToInsert ID="Info.$(outervaluealias).$(currentvaluealias)" Namespace="Button.Peekaboo" Data="Select"/>
-        </TaskItem>
-        <TaskItem Type="Marvin">
-          <DataToInsert ID="TitleVisibility" Namespace="Page" Data="Show" />
-        </TaskItem>
-        <TaskItem Type="Marvin">
-          <DataToInsert ID="SubpageTitleVisibility" Namespace="Info" Data="Show" />
-        </TaskItem>
-        <TaskItem Type="Marvin">
-          <DataToInsert ID="Area" Namespace="Menu" Data="Info" />
+<DataToInsert ID="Info.$(outervaluealias).$(currentvaluealias)" Namespace="Button.Peekaboo" Data="Select"/> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert ID="TitleVisibility" Namespace="Page" Data="Show" /> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert ID="SubpageTitleVisibility" Namespace="Info" Data="Show" /> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert ID="Area" Namespace="Menu" Data="Info" />
         </TaskItem>
       </TaskList>
     </For>
@@ -264,16 +198,7 @@
         <DataToInsert ID="Title" Namespace="Info" Data="$(Button.Text.Legal.Main.$(currentvaluealias))" />
       </TaskItem>
       <TaskItem Type="Marvin" Postpone="1">
-        <DataToInsert ID="Legal.$(currentvaluealias).$(INFO.SUBMENU_$(currentvaluealias)_DEFAULT)" Namespace="Button.Peekaboo" Data="Select"/>
-      </TaskItem>
-      <TaskItem Type="Marvin">
-        <DataToInsert ID="TitleVisibility" Namespace="Page" Data="Show" />
-      </TaskItem>
-      <TaskItem Type="Marvin">
-        <DataToInsert ID="SubpageTitleVisibility" Namespace="Legal" Data="Show" />
-      </TaskItem>
-      <TaskItem Type="Marvin">
-        <DataToInsert ID="Legal.Slide" Namespace="Menu" Data="$(INFO.SUBMENU_$(currentvaluealias)_DEFAULT)" />
+<DataToInsert ID="Legal.$(currentvaluealias).$(INFO.SUBMENU_$(currentvaluealias)_DEFAULT)" Namespace="Button.Peekaboo" Data="Select"/> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert ID="TitleVisibility" Namespace="Page" Data="Show" /> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert ID="SubpageTitleVisibility" Namespace="Legal" Data="Show" /> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert ID="Legal.Slide" Namespace="Menu" Data="$(INFO.SUBMENU_$(currentvaluealias)_DEFAULT)" />
       </TaskItem>
       <TaskItem Type="Marvin">
         <DataToInsert ID="Area" Namespace="Menu" Data="Legal" />
@@ -293,16 +218,7 @@
           <DataToInsert ID="SubpageTitle" Namespace="Page" Data="$(Button.Title.Legal.Main.$(outervaluealias).$(currentvaluealias))" />
         </TaskItem>
         <TaskItem Type="Marvin" Postpone="1">
-          <DataToInsert ID="Legal.$(outervaluealias).$(currentvaluealias)" Namespace="Button.Peekaboo" Data="Select"/>
-        </TaskItem>
-        <TaskItem Type="Marvin">
-          <DataToInsert ID="TitleVisibility" Namespace="Page" Data="Show" />
-        </TaskItem>
-        <TaskItem Type="Marvin">
-          <DataToInsert ID="SubpageTitleVisibility" Namespace="Legal" Data="Show" />
-        </TaskItem>
-        <TaskItem Type="Marvin">
-          <DataToInsert ID="Area" Namespace="Menu" Data="Legal" />
+<DataToInsert ID="Legal.$(outervaluealias).$(currentvaluealias)" Namespace="Button.Peekaboo" Data="Select"/> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert ID="TitleVisibility" Namespace="Page" Data="Show" /> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert ID="SubpageTitleVisibility" Namespace="Legal" Data="Show" /> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert ID="Area" Namespace="Menu" Data="Legal" />
         </TaskItem>
       </TaskList>
     </For>
@@ -321,16 +237,7 @@
       <DataToInsert ID="Area" Namespace="Menu" Data="Demo" />
     </TaskItem>
     <TaskItem Type="Marvin">
-      <DataToInsert ID="Info.Slide" Namespace="Menu" Data="Default" />
-    </TaskItem>
-    <TaskItem Type="Marvin">
-      <DataToInsert ID="TitleVisibility" Namespace="Page" Data="Hide" />
-    </TaskItem>
-  </TaskList>
-
-  <!-- Main -->
-  <For Count="8" StartValue="1">
-    <TaskList ID="Button.Task.Demo.Main.$(currentvaluealias)">
+<DataToInsert ID="Info.Slide" Namespace="Menu" Data="Default" /> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert ID="TitleVisibility" Namespace="Page" Data="Hide" /> </TaskItem> </TaskList> <!-- Main --> <For Count="8" StartValue="1"> <TaskList ID="Button.Task.Demo.Main.$(currentvaluealias)">
       <TaskItem Type="OtherTask" ID="ResetButtons" />
       <TaskItem Type="Marvin">
         <DataToInsert ID="Area" Namespace="Menu" Data="Demo" />
@@ -378,35 +285,7 @@
       <If Value1="$(currentvaluealias)" Compare="IF_LT" Value2="7">
         <Then>
           <TaskItem Type="Marvin" Postpone="1">
-            <DataToInsert ID="Demo.1.$(currentvaluealias)" Namespace="Button.Peekaboo" Data="Select"/>
-          </TaskItem>
-          <TaskItem Type="Marvin">
-            <DataToInsert ID="SubpageTitleVisibility" Namespace="Demo" Data="Show" />
-          </TaskItem>
-          <TaskItem Type="Marvin">
-            <DataToInsert ID="SubpageTitle" Namespace="Page" Data="$(Button.Text.Demo.1.$(currentvaluealias))" />
-          </TaskItem>
-        </Then>
-        <Else>
-          <TaskItem Type="Marvin">
-            <DataToInsert ID="SubpageTitleVisibility" Namespace="Demo" Data="Hide" />
-          </TaskItem>
-        </Else>
-      </If>
-      <If Value1="$(currentvaluealias)" Compare="IF_EQ" Value2="8">
-        <Then>
-          <TaskItem Type="LaunchProgram">
-            <Application>explorer.exe</Application>
-            <Param>"https://networkbuilders.intel.com/social-hub/video/enhanced-platform-awareness-in-kubernetes-demo-video"</Param>
-          </TaskItem>
-        </Then>
-      </If>
-      <TaskItem Type="Marvin">
-        <DataToInsert Namespace="Expkit2" ID="Tagline" Data="$(EXPKIT2_Tagline_$(currentvaluealias)_0)" />
-      </TaskItem>
-      <TaskItem Type="Marvin">
-        <DataToInsert Namespace="Expkit2" ID="Tagline.1" Data="$(EXPKIT2_Tagline_$(currentvaluealias)_1)" />
-      </TaskItem>
+<DataToInsert ID="Demo.1.$(currentvaluealias)" Namespace="Button.Peekaboo" Data="Select"/> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert ID="SubpageTitleVisibility" Namespace="Demo" Data="Show" /> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert ID="SubpageTitle" Namespace="Page" Data="$(Button.Text.Demo.1.$(currentvaluealias))" /> </TaskItem> </Then> <Else> <TaskItem Type="Marvin"> <DataToInsert ID="SubpageTitleVisibility" Namespace="Demo" Data="Hide" /> </TaskItem> </Else> </If> <If Value1="$(currentvaluealias)" Compare="IF_EQ" Value2="8"> <Then> <TaskItem Type="LaunchProgram"> <Application>explorer.exe</Application> <Param>"https://networkbuilders.intel.com/social-hub/video/enhanced-platform-awareness-in-kubernetes-demo-video"</Param> </TaskItem> </Then> </If> <TaskItem Type="Marvin"> <DataToInsert Namespace="Expkit2" ID="Tagline" Data="$(EXPKIT2_Tagline_$(currentvaluealias)_0)" /> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert Namespace="Expkit2" ID="Tagline.1" Data="$(EXPKIT2_Tagline_$(currentvaluealias)_1)" /> </TaskItem>
       <TaskItem Type="Marvin">
         <DataToInsert Namespace="Expkit2" ID="Tagline.2" Data="$(EXPKIT2_Tagline_$(currentvaluealias)_2)" />
       </TaskItem>
@@ -438,37 +317,10 @@
       <If Value1="$(currentvaluealias)" Compare="IF_LT" Value2="7">
         <Then>
           <TaskItem Type="Marvin" Postpone="1">
-            <DataToInsert ID="Demo.2.$(currentvaluealias)" Namespace="Button.Peekaboo" Data="Select"/>
-          </TaskItem>
-          <TaskItem Type="Marvin">
-            <DataToInsert ID="SubpageTitleVisibility" Namespace="Demo" Data="Show" />
-          </TaskItem>
-          <TaskItem Type="Marvin">
-            <DataToInsert ID="SubpageTitle" Namespace="Page" Data="$(Button.Text.Demo.2.$(currentvaluealias))" />
+<DataToInsert ID="Demo.2.$(currentvaluealias)" Namespace="Button.Peekaboo" Data="Select"/> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert ID="SubpageTitleVisibility" Namespace="Demo" Data="Show" /> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert ID="SubpageTitle" Namespace="Page" Data="$(Button.Text.Demo.2.$(currentvaluealias))" /> </TaskItem> </Then> <Else> <TaskItem Type="Marvin"> <DataToInsert ID="SubpageTitleVisibility" Namespace="Demo" Data="Hide" /> </TaskItem> </Else> </If> <If Value1="$(currentvaluealias)" Compare="IF_EQ" Value2="8"> <Then> <TaskItem Type="LaunchProgram"> <Application>explorer.exe</Application> <Param>"https://networkbuilders.intel.com/social-hub/video/doxsehe0"</Param>
           </TaskItem>
         </Then>
-        <Else>
-          <TaskItem Type="Marvin">
-            <DataToInsert ID="SubpageTitleVisibility" Namespace="Demo" Data="Hide" />
-          </TaskItem>
-        </Else>
-      </If>
-      <If Value1="$(currentvaluealias)" Compare="IF_EQ" Value2="8">
-        <Then>
-          <TaskItem Type="LaunchProgram">
-            <Application>explorer.exe</Application>
-            <Param>"https://networkbuilders.intel.com/social-hub/video/doxsehe0"</Param>
-          </TaskItem>
-        </Then>
-      </If>
-      <TaskItem Type="Oscar">
-        <Task OscarID="Oscar.Main">StopLive</Task>
-      </TaskItem>
-      <TaskItem Type="Oscar">
-        <Task OscarID="Oscar.Main">Playback</Task>
-        <Param>speed=1</Param>
-        <Param>Loop</Param>
-        <Param>File=$(EXPKIT3_BIFF_DATA_$(currentvaluealias))</Param>
+</If> <TaskItem Type="Oscar"> <Task OscarID="Oscar.Main">StopLive</Task> </TaskItem> <TaskItem Type="Oscar"> <Task OscarID="Oscar.Main">Playback</Task> <Param>speed=1</Param> <Param>Loop</Param> <Param>File=$(EXPKIT3_BIFF_DATA_$(currentvaluealias))</Param>
       </TaskItem>
       <TaskItem Type="Marvin">
         <DataToInsert ID="Area" Namespace="Menu" Data="Demo" />
@@ -485,35 +337,12 @@
   <!-- Demo 3 -->
   <For Count="8" StartValue="1">
     <TaskList ID="Button.Task.Demo.3.$(currentvaluealias)">
-      <TaskItem Type="OtherTask" ID="ResetButtons" />
-      <TaskItem Type="Oscar">
-        <Task OscarID="Oscar.Main">StopLive</Task>
-      </TaskItem>
-      <TaskItem Type="Oscar">
-        <Task OscarID="Oscar.Main">Playback</Task>
-        <Param>speed=1</Param>
-        <Param>Loop</Param>
-        <Param>File=$(EXPKIT4_BIFF_DATA_$(currentvaluealias))</Param>
+<TaskItem Type="OtherTask" ID="ResetButtons" /> <TaskItem Type="Oscar"> <Task OscarID="Oscar.Main">StopLive</Task> </TaskItem> <TaskItem Type="Oscar"> <Task OscarID="Oscar.Main">Playback</Task> <Param>speed=1</Param> <Param>Loop</Param> <Param>File=$(EXPKIT4_BIFF_DATA_$(currentvaluealias))</Param>
       </TaskItem>
       <If Value1="$(currentvaluealias)" Compare="IF_LT" Value2="5">
         <Then>
           <TaskItem Type="Marvin" Postpone="1">
-            <DataToInsert ID="Demo.3.$(currentvaluealias)" Namespace="Button.Peekaboo" Data="Select"/>
-          </TaskItem>
-          <TaskItem Type="Marvin">
-            <DataToInsert ID="SubpageTitleVisibility" Namespace="Demo" Data="Show" />
-          </TaskItem>
-          <TaskItem Type="Marvin">
-            <DataToInsert ID="SubpageTitle" Namespace="Page" Data="$(Button.Text.Demo.3.$(currentvaluealias))" />
-          </TaskItem>
-        </Then>
-        <Else>
-          <TaskItem Type="Marvin">
-            <DataToInsert ID="SubpageTitleVisibility" Namespace="Demo" Data="Hide" />
-          </TaskItem>
-        </Else>
-      </If>
-      <If Value1="$(currentvaluealias)" Compare="IF_EQ" Value2="7">
+<DataToInsert ID="Demo.3.$(currentvaluealias)" Namespace="Button.Peekaboo" Data="Select"/> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert ID="SubpageTitleVisibility" Namespace="Demo" Data="Show" /> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert ID="SubpageTitle" Namespace="Page" Data="$(Button.Text.Demo.3.$(currentvaluealias))" /> </TaskItem> </Then> <Else> <TaskItem Type="Marvin"> <DataToInsert ID="SubpageTitleVisibility" Namespace="Demo" Data="Hide" /> </TaskItem> </Else> </If> <If Value1="$(currentvaluealias)" Compare="IF_EQ" Value2="7">
         <Then>
           <TaskItem Type="LaunchProgram">
             <Application>explorer.exe</Application>
@@ -583,13 +412,7 @@
       <If Value1="$(currentvaluealias)" Compare="IF_LT" Value2="3">
         <Then>
           <TaskItem Type="Marvin" Postpone="1">
-            <DataToInsert ID="Demo.4.$(currentvaluealias)" Namespace="Button.Peekaboo" Data="Select"/>
-          </TaskItem>
-          <TaskItem Type="Marvin">
-            <DataToInsert ID="SubpageTitleVisibility" Namespace="Demo" Data="Show" />
-          </TaskItem>
-          <TaskItem Type="Marvin">
-            <DataToInsert ID="SubpageTitle" Namespace="Page" Data="$(Button.Text.Demo.4.$(currentvaluealias))" />
+<DataToInsert ID="Demo.4.$(currentvaluealias)" Namespace="Button.Peekaboo" Data="Select"/> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert ID="SubpageTitleVisibility" Namespace="Demo" Data="Show" /> </TaskItem> <TaskItem Type="Marvin"> <DataToInsert ID="SubpageTitle" Namespace="Page" Data="$(Button.Text.Demo.4.$(currentvaluealias))" />
           </TaskItem>
           <TaskItem Type="Marvin">
             <DataToInsert ID="Expkit5VideoGrid" Namespace="Expkit5VideoGrid" Data="$(currentvaluealias)" />
